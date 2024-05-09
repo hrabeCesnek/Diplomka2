@@ -1,0 +1,323 @@
+% -----------------------------------------------
+% Styl pro psaní diplomových a bakalářských prací
+% -----------------------------------------------
+\documentclass[a4paper,12pt]{book} % pro oboustranný tisk zvolte {book}!
+% velikost stránky
+\usepackage[tmargin=2cm,bmargin=2.5cm,rmargin=2cm,lmargin=3.5cm]{geometry}
+% volba kódování, nastaveno je unicode
+\usepackage[utf8]{inputenc}
+% \usepackage[cp1250]{inputenc}
+% \usepackage[latin2]{inputenc}
+\usepackage[english]{babel}
+%\def\refname{Literatura}
+% pomocná makra pro sazbu matematických výrazů
+\usepackage{amssymb} %na psaní dvojitých písem a zvlastních znaků (např. \varkappa)
+\usepackage{amsmath}
+% balíček pro vkládání obrázků
+\usepackage{graphicx}
+\usepackage{subfig}
+% balíček pro obrázky na krajích stránky 
+%\usepackage{floatflt}
+% balíček pro křížové odkazy
+\usepackage[unicode,bookmarksopen,colorlinks=false,plainpages=false,urlcolor=blue,pdfpagelabels]{hyperref}
+% balíček pro vkládání hypertextových odkazů
+\usepackage{url}
+
+\usepackage{float}
+\usepackage{lastpage}
+
+%\usepackage[numbers]{natbib}
+
+\usepackage[
+backend=biber,
+style=iso-numeric,
+sorting=ynt
+]{biblatex}
+\addbibresource{citations.bib}
+
+%style=phys,
+
+%
+% -----------------------------------------------
+% Přepínač mezi bakalářskou a diplomovou prací, 
+% barevným a černobílým logem a mezi studentem a studentkou (vypracoval/vypracovala apod.)
+% -----------------------------------------------
+\newif\ifbakal\bakalfalse
+\newif\ifbarva\barvafalse
+\newif\ifstudentka\studentkafalse
+
+% -----------------------------------------------
+% Údaje o práci – doplní se i do bibliografické identifikace, pouze v prohlášení je nutné vložit jméno vedoucího práce, které není v 1. pádě
+% -----------------------------------------------
+\newcommand{\nazevcz}{Charakterizace polovodičových detektorů pro detekci gama záření a jejich aplikace v Mössbauerově
+spektroskopii.}
+\newcommand{\nazev}{Characterization of semiconductor detectors for gamma-rays detection and their application in Mössbauer
+spectroscopy.}
+\newcommand{\student}{Daniel Staník}
+\ifbakal%
+  \newcommand{\program}{B0533A110007  Applied Physics}%
+  \newcommand{\obor}{1702R001  Applied Physics  (AFYZ)}%
+  \else%
+  \newcommand{\program}{N0533A110002 Applied Physics}%
+  \newcommand{\obor}{1702T001 Applied Physics  (AFYZ)}%  
+
+\fi
+\newcommand{\rokod}{2024}
+\newcommand{\vedouci}{Mgr. Aleš Stejskal Ph.D.}
+\newcommand{\konzultant}{Mgr. Leo Schlattauer Ph.D.}
+
+\newcommand{\abstrakt}{%
+Tato práce je věnována vývoji polovodičového detektoru pro nízkoenergetické gamma fotony. Popisuje testování PIN fotodiod, vývoj analogových elektornických obvodů pro gamma a Mössbauerovu spektroskopii a taktéž se zabývá komparačními měřeními mezi polovodičovými detektory a jinými typy detektorů.}
+% -----------------------------------------------
+\newcommand{\abstrakten}{%
+This thesis is dedicated to the development of
+of semiconductor detectors for low energy gamma photons. It describes the testing of PIN photodiodes, the development of analog electronic circuits for the purposes gamma and Mössbauer spectroscopy and also deals with comparative measurements between semiconductor detectors and other types of detectors.}
+% klíčová slova
+\newcommand{\klic}{PIN fotodioda, PCB, MS, gamma spektrum, předzesilovač}
+\newcommand{\klicen}{PIN photodiode, PCB, MS, gamma spectrum, preamplifier}
+\newcommand{\pocetstran}{	
+\pageref{LastPage}}
+\newcommand{\pocetpriloh}{1}
+
+% -----------------------------------------------
+% Definice vlastních maker pro usnadnění psaní
+% a opakování symbolů při zlomu řádku
+% -----------------------------------------------
+% implikace se opakuje
+\def\Plyne{\Rightarrow\discretionary{}{\hbox{$\Rightarrow$}}{}}
+% -----------------------------------------------
+% ekvivalence se opakuje
+\def\Ekviv{\Leftrightarrow\discretionary{}{\hbox{$\Leftrightarrow$}}{}}
+% -----------------------------------------------
+% % plus '+' se opakuje při zalomení řádku
+\mathchardef\plus="202B
+\mathcode`\+="8000
+{\catcode`\+=\active
+\gdef+{\plus\nobreak\discretionary{}{\hbox{$\plus$}}{}}}
+% opakování - při zalomení řádku
+\newsavebox{\minusbox}
+\savebox{\minusbox}{\hbox{$-$}}
+\def\aktivniminus #1{{\catcode`#1=13 \bgroup \uccode`~=`#1
+\uppercase{\egroup\gdef~}{\mathminus\discretionary{}{\copy\minusbox}{}}}}
+% % -----------------------------------------------
+% % rovnitko '=' se opakuje
+\def\aktivnirovnitko #1{{\catcode`#1=13 \bgroup \uccode`~=`#1
+\uppercase{\egroup\gdef~}{\mathequal\discretionary{}{=}{}}}}
+% -----------------------------------------------
+% zrušení mezery za čárkou v matematickém reľimu
+\mathcode`,="002C
+
+% -----------------------------------------------
+% Úprava matematické sazby
+% -----------------------------------------------
+\def\sgn{\mathop{\rm sgn}\nolimits}
+\def\tg{\mathop{\rm tg}\nolimits}
+\def\cotg{\mathop{\rm cotg}\nolimits}
+\def\arctg{\mathop{\rm arctg}\nolimits}
+% -----------------------------------------------
+% vektory polotučným skloněným písmem
+\DeclareFontFamily{OT1}{bssbf}{}
+\DeclareFontShape{OT1}{bssbf}{m}{n}{<5> <6> <7> <8> <9> <10> <11> <12> <14.4> <17> <20> <20.74> <25> bssb10}{}
+\newcommand{\vek}{\fontencoding{OT1}\fontfamily{bssbf}\selectfont}
+\renewcommand{\vec}[1]{\hbox{\vek #1}\hspace*{1.5pt}}
+% polotučná řecká písmena
+\def\bgomega{\vec{\char151}}
+     \def\bgOmega{\vec{\char10}}
+     \def\bggamma{\vec{\char130}}
+     \def\bgvarphi{\vec{\char161}}
+     \def\bgphi{\vec{\char148}}
+     \def\bgxi{\vec{\char142}}
+     \def\bgtau{\vec{\char146}}
+     \def\bgeta{\vec{\char134}}
+     \def\bgmu{\vec{\char139}}
+     \def\bgnu{\vec{\char140}}
+     \def\bvarrho{\vec{\char157}}
+     \def\bgsigma{\vec{\char145}}
+     \def\bgpsi{\vec{\char150}}
+     \def\bgchi{\vec{\char149}}
+     \def\bgvartheta{\vec{\char154}}
+%\renewcommand{\thefigure}{\arabic{figure}}
+%\renewcommand{\theeuqation}{\arabic{euqation}}
+
+\raggedbottom %přidaný kvůli špatnýmu řádkování
+% ---------------------------------------------------------------
+% Samotná práce
+% ---------------------------------------------------------------
+\begin{document}
+% -----------------------------------------------
+% Titulní strana
+% -----------------------------------------------
+\pagestyle{empty}
+\setbox0=\hbox{\LARGE\scshape Joint Laboratory of Optics}
+\centerline{\LARGE\scshape  Palacký University Olomouc}
+
+\bigskip
+\centerline{\LARGE\scshape Faculty of Science}
+   
+\bigskip
+\centerline{\box0}
+  
+\vfill
+\centerline{\LARGE\bfseries \ifbakal{BACHELOR}\else{MASTER}\fi\ THESIS}
+
+\bigskip
+\begin{center}
+{\huge\nazev}  
+
+
+\vfill
+\ifbarva\includegraphics[height=3cm]{up_logo_color}\else%
+\includegraphics[height=3cm]{up_logo_bw}\fi
+
+\vfill
+
+\noindent%
+\begin{tabular}{ll}
+Author\ifstudentka{a}\fi: & {\bfseries\student}\\
+Study program: &\program\\
+Field of study: &\obor\\
+Form of study:& Full-time\\
+Supervisor:& \vedouci\\
+Deadline:& May~\rokod
+\end{tabular}
+\end{center}
+%----Vdek------------------------------------------------------
+\newpage
+\hbox{~}
+
+\vfill
+\noindent
+
+I would like to thank my supervisor Mgr. Aleš Stejskal Ph.D. for his support, guidance and feedback during the whole process of writing this thesis. I would also like to thank my former supervisor Mgr. Leo Schlattauer Ph.D. for the necessary support at the very beginning of the work on the experimental part of this thesis.
+
+
+% ---------------------------------------------------------------
+% Prohlášení
+% -----------------------------------------------
+\newpage
+\hbox{~}
+
+\vfill
+
+\begin{center}
+{\bf DECLARATION}
+\end{center}
+
+\noindent
+I hereby declare that I elaborated this master thesis independently under the supervision 
+of Mgr. Aleš Stejskal Ph.D.,  using  only  information  sources  referred  in  the  Literature chapter. \\
+{}\vspace{3ex}
+
+\noindent
+In~Olomouc~\today   \hfill\parbox[t]{6cm}{\centering\null\dotfill\\\student}
+
+% -----------------------------------------------
+% Bibliografická anotace
+% -----------------------------------------------
+\newpage
+\input{bibl_identifikace}
+
+%%%% Tady začínáme %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\widowpenalty =10000
+\pagestyle{plain}
+\let\cleardoublepage\clearpage %odstanění dvojitých stran
+% -----------------------------------------------
+% Obsah je generován automaticky, změny se projeví po 2 překladech
+% -----------------------------------------------
+\tableofcontents
+
+% -----------------------------------------------
+% Úvod
+% -----------------------------------------------
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+In nuclear and particle physics, semiconductor-based detectors are becoming increasingly common due to the many unique properties they offer. Semiconductor detectors have a very wide range of applications, from spectroscopy to large particle experiments such as ATLAS at CERN.  
+
+\par
+This thesis is dedicated to the development of a semiconductor detector based on a Si photodiode for the detection of low energy gamma photons. The detection of low-energy gamma photons plays a crucial role in the field of Mössbauer spectroscopy, which requires a detector with sufficient detection efficiency and energy resolution.
+\par
+The first four chapters are theoretical and provide a brief introduction to the mechanisms of gamma photon interaction and detection, the properties of semiconductor detectors and the basics of Mössbauer spectroscopy. These chapters are followed by a chapter describing the specifications of nuclear instruments used to build a spectrometric chain, and then a chapter introducing the numerical analysis of gamma energy spectra. 
+
+\par
+The experimental part begins with the gamma-detection tests of selected photodiodes and is followed by a chapter filled with the technical description of the PCB integration of the spectrometric chain. The thesis ends with two chapters presenting the results of gamma energy spectra and Mössbauer spectra measurements.
+
+% -----------------------------------------------
+% Kapitoly lze ukládat do zvláštních souborů...
+% -----------------------------------------------
+
+% -----------------------------------------------
+\input{gammaRays}
+
+\input{detectors}
+
+\input{Semiconductors}
+
+\input{Mossbauer}
+
+\input{pulseAnalysis}
+
+\input{Algorytms}
+
+\input{PINtesting}
+
+\input{PCBconstruct}
+
+\input{PCBmeas}
+
+\input{MossMeas}
+
+
+
+
+
+
+% -----------------------------------------------
+% Závěr
+% -----------------------------------------------
+\chapter*{Conclusion}
+\addcontentsline{toc}{chapter}{Conclusion}
+
+The first tests of Si PIN photodiodes were performed on setup consisting of ORTEC modular parts. All the three selected photodiodes (S14605, BPW34 and OPF430) produced spectrometric pulses and the gamma spectra of $^{57}$Co were successfully measured and interpreted. Characteristic full energy peaks of $^{57}$Co (14.4 keV, 122.1 keV and 136.5 keV) were observed as well as expected Compton continuum originating from Compton scattering of 122.1 keV inside the detector. It was found out, that the electromagnetic shielding plays a very important role in noise reduction. The Si PIN  photodiodes attached to charge preamplifier can not work properly without sufficient shielding. Cooling the photodiode also had an effect, but its significance was much lower.
+\par
+It was proven, that even a cheap Si PIN photodiode (BPW34 and OPF430) originally intended for detection of light can be employed as detector for gamma spectroscopy. However, it was shown that their detection efficiency is much worse than the detection efficiency of photodiode S14605, which is classified as x-ray detector.
+\par
+The front-end analog electronics for Si PIN detectors in form of PCB consisting of Cremat modules and SMD parts was successfully developed. This designed PCB placed into the shielding box integrates a significant part of spectrometric chain inside itself - PIN photodiode, the charge preamplifier, two amplification stages, the shaper and the high voltage supply for photodiode in form of a charge pump. For its functionality it requires only +15 V and -15 V power supply. Its output can be directly routed to the MCA. This Si PIN detector with integrated amplifier Int a full observation of 14.4 keV energy peak. The MS measurement setup employing constructed Si PIN detector was successfully assembled and the transmission MS spectra of a singlet sample was successfully measured.
+\par
+Two types of measurements were performed in order to compare the Si PIN detector with gaseous and scintillator detector - the measurement of 14.4 keV realative detection efficiency and the MS measurement. The only parameter of the Si PIN detector, which can be characterized as the best among the tested detectors is $E_{\textrm{MS}}$.
+
+\par 
+The development of PIN detector for transmission MS spectroscopy can continue by employing the photodiodes with better detection efficiency - by using Si photodiode with greater thickness or by using a photodiode made of a different material with higher $Z$ (for example Ge). To fully observe 6.4 keV energy peak, it will be necessary to employ a photodiode with lesser capacitance (greater thickness also implies lesser capacitance) or a preamplifier with a better characteristics. The development can also go on by the mathematical modelling of a better semiconductor detector for MS and by a theoretical simulations of its detection efficiency by using some of well-known programs for the simulation of passage of particles through matter such as the Geant4 \cite{Geant4}.
+
+\par
+The work on thesis was both very hard and experiencing, and thus it can be compared to have to chug a bottle of 50$\%$ vodka - get sick, get experienced.
+
+
+
+% -----------------------------------------------
+% Literatura a prameny
+% -----------------------------------------------
+%\begin{thebibliography}{99}
+%\bibliographystyle{unsrt}
+%\nocite{*}
+%\bibliography{citations}
+%\nocite{MALACARI2020102430}
+\nocite{*}
+%\nocite{Tomankova2016_1000061954}
+%\nocite{VACULA2021167169}
+%\addcontentsline{toc}{chapter}{Literatura}
+%\bibitem{gravitation} MISNER, Ch. W.; THORNE, K. S.; WHEELER, J. A. %\emph{Gravitation}. San Francisco: W. Freeman, 1973.
+%\end{thebibliography}
+\printbibliography[notcategory=skipbibliography]
+%\newpage
+%\chapter*{Attachment: Measurement and analysis programs}
+%Measurement folder - scripts for controlling measurement
+%\newline
+%PulseAnalysis folder - scripts for PMT pulse analysis
+%\newline
+%FASTanalyze.cpp - calibration data analysis
+%\newline
+%main.c - Nucleo F446RE's synchronized sampling and PID regulator firmware
+\end{document}
+% Konec souboru %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

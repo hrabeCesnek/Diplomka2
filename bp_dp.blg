@@ -1,0 +1,32 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is 'bp_dp.blg'
+[31] biber:313> INFO - === Ne dub 28, 2024, 10:40:19
+[101] Biber.pm:371> INFO - Reading 'bp_dp.bcf'
+[141] Biber.pm:854> INFO - Using all citekeys in bib section 0
+[150] Biber.pm:3981> INFO - Processing section 0
+[236] Biber.pm:4154> INFO - Looking for bibtex format file 'citations.bib' for section 0
+[240] bibtex.pm:1468> INFO - LaTeX decoding ...
+[273] bibtex.pm:1294> INFO - Found BibTeX data source 'citations.bib'
+[281] Utils.pm:169> WARN - Entry 'eagle' (citations.bib): Invalid format '2024-2-3' of date field 'urldate' - ignoring
+[283] Utils.pm:169> WARN - Entry 'SiCdTe' (citations.bib): Invalid format '2024-2-3' of date field 'urldate' - ignoring
+[367] Utils.pm:169> WARN - Entry 'co57' (citations.bib): Invalid format '2024-2-3' of date field 'urldate' - ignoring
+[382] Utils.pm:169> WARN - Entry 'Shapflify' (citations.bib): Invalid format '2024-4-22' of date field 'urldate' - ignoring
+[384] Utils.pm:169> WARN - Entry 'OPA847' (citations.bib): Invalid format '2024-4-22' of date field 'urldate' - ignoring
+[399] Utils.pm:169> WARN - Entry 'ORTECpreamp' (citations.bib): Invalid format '2024-2-3' of date field 'urldate' - ignoring
+[401] Utils.pm:169> WARN - Entry 'maestro' (citations.bib): Invalid format '2024-2-3' of date field 'urldate' - ignoring
+[403] Utils.pm:169> WARN - Entry 'C9028' (citations.bib): Invalid format '2024-4-22' of date field 'urldate' - ignoring
+[405] Utils.pm:169> WARN - year field '2016 [cit. 2023-11-06]' in entry 'NOVAK2016thesis' is not an integer - this will probably not sort properly.
+[408] Utils.pm:169> WARN - Entry 'compounds' (citations.bib): Invalid format '2023-11-2' of date field 'urldate' - ignoring
+[413] Utils.pm:169> WARN - Entry 'charge' (citations.bib): Invalid format '2024-2-3' of date field 'urldate' - ignoring
+[416] Utils.pm:169> WARN - Entry 'MCAOrtec' (citations.bib): Invalid format '2024-2-3' of date field 'urldate' - ignoring
+[419] Utils.pm:169> WARN - Entry 'R6095' (citations.bib): Invalid format '2024-4-22' of date field 'urldate' - ignoring
+[422] Utils.pm:169> WARN - Entry 'Geant4' (citations.bib): Invalid format '2024-4-22' of date field 'urldate' - ignoring
+[427] Utils.pm:169> WARN - Entry 'star' (citations.bib): Invalid format '2024-4-22' of date field 'urldate' - ignoring
+[456] Utils.pm:169> WARN - year field '2019 [cit. 2023-11-06]' in entry 'STEJSKAL2019thesis' is not an integer - this will probably not sort properly.
+[481] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[481] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[482] Biber.pm:3809> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[482] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[515] bbl.pm:617> INFO - Writing 'bp_dp.bbl' with encoding 'UTF-8'
+[523] bbl.pm:720> INFO - Output to bp_dp.bbl
+[523] Biber.pm:110> INFO - WARNINGS: 16

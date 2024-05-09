@@ -1,0 +1,229 @@
+% -----------------------------------------------
+% Styl pro psaní diplomových a bakalářských prací
+% Určeno pro překlad pdfcsLaTeXem
+% -----------------------------------------------
+\documentclass[a4paper,12pt]{report} % pro oboustranný tisk zvolte {book}!
+% velikost stránky
+\usepackage[tmargin=2cm,bmargin=2.5cm,rmargin=2cm,lmargin=3.5cm]{geometry}
+% volba kódování, nastaveno je unicode
+\usepackage[utf8]{inputenc}
+% \usepackage[cp1250]{inputenc}
+% \usepackage[latin2]{inputenc}
+\usepackage{czech}
+%\def\refname{Literatura}
+% pomocná makra pro sazbu matematických výrazů
+\usepackage{amssymb} %na psaní dvojitých písem a zvlastních znaků (např. \varkappa)
+\usepackage{amsmath}
+% balíček pro vkládání obrázků
+\usepackage{graphicx}
+% balíček pro obrázky na krajích stránky 
+\usepackage{floatflt}
+% balíček pro křížové odkazy
+\usepackage[unicode,bookmarksopen,colorlinks=false,plainpages=false,urlcolor=blue,pdfpagelabels]{hyperref}
+% balíček pro vkládání hypertextových odkazů
+\usepackage{url}
+
+% -----------------------------------------------
+% Přepínač mezi bakalářskou a diplomovou prací, 
+% barevným a černobílým logem a mezi studentem a studentkou (vypracoval/vypracovala apod.)
+% -----------------------------------------------
+\newif\ifbakal\bakalfalse
+\newif\ifbarva\barvafalse
+\newif\ifstudentka\studentkafalse
+
+% -----------------------------------------------
+% Údaje o práci – doplní se i do bibliografické identifikace, pouze v prohlášení je nutné vložit jméno vedoucího práce, které není v 1. pádě
+% -----------------------------------------------
+\newcommand{\nazev}{Název práce}
+\newcommand{\nazeven}{The Thesis Title}
+\newcommand{\student}{Jméno a Příjmení}
+\ifbakal%
+  \newcommand{\program}{B1701 Fyzika}%
+  \newcommand{\obor}{1701R003 Fyzika se zaměřením na vzdělávání}%
+  \else%
+  \newcommand{\program}{N1701 Fyzika}%
+  \newcommand{\obor}{7504T055 Učitelství fyziky pro střední školy}%
+\fi
+\newcommand{\rokod}{20xx}
+\newcommand{\vedouci}{Jméno a Příjmení vedoucího práce}
+\newcommand{\abstrakt}{%
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lectus sit amet lectus vestibulum dignissim. Cras sit amet enim vitae mi elementum blandit eget nec tortor. Curabitur eget eros vitae arcu luctus varius commodo vel mauris. Nam elementum convallis pretium. Nunc dignissim pulvinar urna, nec blandit ante fringilla at. Ut et magna purus, vel pellentesque massa. In tortor nisi, faucibus condimentum cursus ut, sollicitudin quis leo. Ut at purus nec arcu accumsan tincidunt id id massa. Nam id vehicula mi.}
+% -----------------------------------------------
+\newcommand{\abstrakten}{%
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lectus sit amet lectus vestibulum dignissim. Cras sit amet enim vitae mi elementum blandit eget nec tortor. Curabitur eget eros vitae arcu luctus varius commodo vel mauris. Nam elementum convallis pretium. Nunc dignissim pulvinar urna, nec blandit ante fringilla at. Ut et magna purus, vel pellentesque massa. In tortor nisi, faucibus condimentum cursus ut, sollicitudin quis leo. Ut at purus nec arcu accumsan tincidunt id id massa. Nam id vehicula mi.}
+% klíčová slova
+\newcommand{\klic}{klíčové slovo 1, klíčové slovo 2, \ldots}
+\newcommand{\klicen}{keyword 1, keyword 2, \ldots}
+\newcommand{\pocetstran}{xx}
+\newcommand{\pocetpriloh}{x}
+
+% -----------------------------------------------
+% Definice vlastních maker pro usnadnění psaní
+% a opakování symbolů při zlomu řádku
+% -----------------------------------------------
+% implikace se opakuje
+\def\Plyne{\Rightarrow\discretionary{}{\hbox{$\Rightarrow$}}{}}
+% -----------------------------------------------
+% ekvivalence se opakuje
+\def\Ekviv{\Leftrightarrow\discretionary{}{\hbox{$\Leftrightarrow$}}{}}
+% -----------------------------------------------
+% % plus '+' se opakuje při zalomení řádku
+\mathchardef\plus="202B
+\mathcode`\+="8000
+{\catcode`\+=\active
+\gdef+{\plus\nobreak\discretionary{}{\hbox{$\plus$}}{}}}
+% opakování - při zalomení řádku
+\newsavebox{\minusbox}
+\savebox{\minusbox}{\hbox{$-$}}
+\def\aktivniminus #1{{\catcode`#1=13 \bgroup \uccode`~=`#1
+\uppercase{\egroup\gdef~}{\mathminus\discretionary{}{\copy\minusbox}{}}}}
+% % -----------------------------------------------
+% % rovnitko '=' se opakuje
+\def\aktivnirovnitko #1{{\catcode`#1=13 \bgroup \uccode`~=`#1
+\uppercase{\egroup\gdef~}{\mathequal\discretionary{}{=}{}}}}
+% -----------------------------------------------
+% zrušení mezery za čárkou v matematickém reľimu
+\mathcode`,="002C
+
+% -----------------------------------------------
+% Úprava matematické sazby
+% -----------------------------------------------
+\def\sgn{\mathop{\rm sgn}\nolimits}
+\def\tg{\mathop{\rm tg}\nolimits}
+\def\cotg{\mathop{\rm cotg}\nolimits}
+\def\arctg{\mathop{\rm arctg}\nolimits}
+% -----------------------------------------------
+% vektory polotučným skloněným písmem
+\DeclareFontFamily{OT1}{bssbf}{}
+\DeclareFontShape{OT1}{bssbf}{m}{n}{<5> <6> <7> <8> <9> <10> <11> <12> <14.4> <17> <20> <20.74> <25> bssb10}{}
+\newcommand{\vek}{\fontencoding{OT1}\fontfamily{bssbf}\selectfont}
+\renewcommand{\vec}[1]{\hbox{\vek #1}\hspace*{1.5pt}}
+% polotučná řecká písmena
+\def\bgomega{\vec{\char151}}
+     \def\bgOmega{\vec{\char10}}
+     \def\bggamma{\vec{\char130}}
+     \def\bgvarphi{\vec{\char161}}
+     \def\bgphi{\vec{\char148}}
+     \def\bgxi{\vec{\char142}}
+     \def\bgtau{\vec{\char146}}
+     \def\bgeta{\vec{\char134}}
+     \def\bgmu{\vec{\char139}}
+     \def\bgnu{\vec{\char140}}
+     \def\bvarrho{\vec{\char157}}
+     \def\bgsigma{\vec{\char145}}
+     \def\bgpsi{\vec{\char150}}
+     \def\bgchi{\vec{\char149}}
+     \def\bgvartheta{\vec{\char154}}
+
+% ---------------------------------------------------------------
+% Samotná práce
+% ---------------------------------------------------------------
+\begin{document}
+% -----------------------------------------------
+% Titulní strana
+% -----------------------------------------------
+\pagestyle{empty}
+\setbox0=\hbox{\LARGE\scshape Katedra experimentální fyziky}
+\centerline{\LARGE\scshape Univerzita Palackého v~Olomouci}
+
+\bigskip
+\centerline{\LARGE\scshape Přírodovědecká fakulta}
+   
+\bigskip
+\centerline{\box0}
+  
+\vfill
+\centerline{\LARGE\bfseries \ifbakal{BACHELOR}\else{DIPLOMOVÁ}\fi\ THESIS}
+
+\bigskip
+\begin{center}
+{\huge\nazev}  
+
+
+\vfill
+\ifbarva\includegraphics[height=3cm]{up_logo_color}\else%
+\includegraphics[height=3cm]{up_logo_bw}\fi
+
+\vfill
+
+\noindent%
+\begin{tabular}{ll}
+Vypracoval\ifstudentka{a}\fi: & {\bfseries\student}\\
+Studijní program: &\program\\
+Studijní obor: &\obor\\
+Forma studia:& Prezenční\\
+Vedoucí diplomové práce:& \vedouci\\
+Termín odevzdání práce:& duben~\rokod
+\end{tabular}
+\end{center}
+
+% ---------------------------------------------------------------
+% Prohlášení
+% -----------------------------------------------
+\newpage
+\hbox{~}
+
+\vfill
+
+\begin{center}
+{\bf Prohlášení}
+\end{center}
+
+\noindent
+Prohlašuji, že jsem předloženou diplomovou práci \ifstudentka{vypracovala}\else{vypracoval}\fi\ samostatně pod vedením ........ DOPLNIT JMÉNO ........ a že jsem \ifstudentka{použila}\else{použil}\fi\ zdrojů, které cituji a uvádím v~seznamu použitých pramenů.\\
+{}\vspace{3ex}
+
+\noindent
+V~Olomouci dne~\today   \hfill\parbox[t]{6cm}{\centering\null\dotfill\\\student}
+
+% -----------------------------------------------
+% Bibliografická anotace
+% -----------------------------------------------
+\newpage
+\input{bibl_identifikace}
+
+%%%% Tady začínáme %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\widowpenalty =10000
+\pagestyle{plain}
+% -----------------------------------------------
+% Obsah je generován automaticky, změny se projeví po 2 překladech
+% -----------------------------------------------
+\tableofcontents
+
+% -----------------------------------------------
+% Úvod
+% -----------------------------------------------
+\chapter*{Úvod}
+\addcontentsline{toc}{chapter}{Úvod}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lectus sit amet lectus vestibulum dignissim. Cras sit amet enim vitae mi elementum blandit eget nec tortor. Curabitur eget eros vitae arcu luctus varius commodo vel mauris. Nam elementum convallis pretium. Nunc dignissim pulvinar urna, nec blandit ante fringilla at. Ut et magna purus, vel pellentesque massa. In tortor nisi, faucibus condimentum cursus ut, sollicitudin quis leo. Ut at purus nec arcu accumsan tincidunt id id massa. Nam id vehicula mi. 
+
+\url{http://exfyz.upol.cz/didaktika/}
+
+% -----------------------------------------------
+% Kapitoly lze ukládat do zvláštních souborů...
+% -----------------------------------------------
+\input{text}
+% -----------------------------------------------
+
+% -----------------------------------------------
+% Závěr
+% -----------------------------------------------
+\chapter*{Závěr}
+\addcontentsline{toc}{chapter}{Závěr}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lectus sit amet lectus vestibulum dignissim. Cras sit amet enim vitae mi elementum blandit eget nec tortor. Curabitur eget eros vitae arcu luctus varius commodo vel mauris. Nam elementum convallis pretium. Nunc dignissim pulvinar urna, nec blandit ante fringilla at. Ut et magna purus, vel pellentesque massa. In tortor nisi, faucibus condimentum cursus ut, sollicitudin quis leo. Ut at purus nec arcu accumsan tincidunt id id massa. Nam id vehicula mi. 
+
+% -----------------------------------------------
+% Literatura a prameny
+% -----------------------------------------------
+\begin{thebibliography}{99}
+\addcontentsline{toc}{chapter}{Literatura}
+\bibitem{gravitation} MISNER, Ch. W.; THORNE, K. S.; WHEELER, J. A. \emph{Gravitation}. San Francisco: W. Freeman, 1973.
+\end{thebibliography}
+
+Preferované jsou citace podle norem ČSN ISO 690 a ISO 690-2, popř. styly APS (American Physical Society – u~prací zaměřených fyzikálně) nebo APA (American Psychological Association – u~prací zaměřených více didakticky a pedagogicky).
+\end{document}
+% Konec souboru %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
