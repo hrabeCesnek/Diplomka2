@@ -101,15 +101,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {7}Gamma detection testing}{40}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Noise and its reduction}{42}{section.7.1}
+\contentsline {section}{\numberline {7.1}Noise reduction}{41}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}Electromagnetic noise reduction}{42}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.1}Electromagnetic noise reduction}{41}{subsection.7.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.2}Thermal noise reduction}{43}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.2}Thermal noise reduction}{42}{subsection.7.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Detection test of the $^{57}$Co spectra}{44}{section.7.2}
+\contentsline {section}{\numberline {7.2}Test measurement of the $^{57}$Co spectra}{43}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.1}S14605 test}{45}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.1}S14605 test}{44}{subsection.7.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.2.2}BPW34 test}{45}{subsection.7.2.2}
 \defcounter {refsection}{0}\relax 
@@ -117,13 +117,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {8}Design of integrated amplifier}{48}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Scheme and layout}{48}{section.8.1}
+\contentsline {section}{\numberline {8.1}Electronic schematic and layout}{48}{section.8.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.2}Grounding and Shielding}{53}{section.8.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.3}Photodiode input and preamplifier}{53}{section.8.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Amplification}{53}{section.8.4}
+\contentsline {section}{\numberline {8.4}Amplification and shaping}{53}{section.8.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.5}Voltage supply}{53}{section.8.5}
 \defcounter {refsection}{0}\relax 

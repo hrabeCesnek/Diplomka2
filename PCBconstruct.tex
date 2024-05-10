@@ -1,15 +1,16 @@
 \chapter{Design of integrated amplifier}
-The only way to improve the performance of the spectrometric chain is to integrate the amplification part and a shaper into a small PCB - short the signal routes, reduce parasitic capacitances at preamplifier input and improve the shielding. The various prototypes were designed as double-sided PCBs and manufactured by using the milling machine for PCB to remove cooper from cuprextit plates. The PCB consisting mainly of surface mount deposition (SMD) parts was then assembled by manual soldering.
 
-\section{Scheme and layout}
-The main parts of spectrometric chain integrated PCB are: photodiode input connector, preamplifier, second stage amplifier, shaper module, output buffer optimized for 50\nobreakspace$\Omega$ transmission line, bipolar voltage supply for modules and bias voltage supply for photodiode. To surround the sensitive parts with sufficient shielding, the PCB is placed into aluminium box with drilled photodiode window. The full schematic of the integrated amplifier can be seen in the Fig. \ref{schematic} and the real layout for PCB can be seen in the Figures \ref{layout top} and \ref{layout bottom}.
+The only way to improve the performance of the spectrometric chain is to integrate the preamplifier, amplifier and a shaper into a small PCB since the ORTEC setup does not allows any upgrades. That includes shortening the signal routes, reducing parasitic capacitances at preamplifier input and improving the shielding. The various prototypes were designed as double-sided PCBs and manufactured by using the milling machine. The PCB consisting mainly of surface mount deposition (SMD) parts was then assembled by manual soldering.
+
+\section{Electronic schematic and layout}
+The main parts of integrated amplifier are: photodiode input connector, preamplifier, second stage amplifier, shaper module, output buffer optimized for 50\nobreakspace$\Omega$ transmission line, bipolar voltage supply for modules and bias voltage supply for photodiode. To surround the sensitive parts with sufficient shielding, the PCB is placed into aluminium box with window drilled for photodiode (figures \ref{PCBbox} and \ref{PCBphyss}). The full schematic of the integrated amplifier can be seen in the figure \ref{schematic} and the real layout for PCB can be seen in the figures \ref{layout top} and \ref{layout bottom}.
 
 
 
 \begin{figure}[H]
  \centering
  \includegraphics[scale=0.1, angle = 0]{./pictures/SemiInCrateInside.png}
- \caption{Fully assembled PCB with attached cremat modules inside the shielding box.}
+ \caption{Fully assembled integrated amplifier PCB with attached Cremat modules inside the shielding box.}
  \label{PCBbox}
  
 \end{figure}
@@ -59,22 +60,17 @@ The main parts of spectrometric chain integrated PCB are: photodiode input conne
 
 
 \section{Grounding and Shielding}
-To allow all the currents to have their return path with a sufficient conductivity, the main GND signal has to be spilled all around the circuit board. Even a small resistances in these paths may cause additional noise in signals. Currents from non-signal parts such as charge pump should have their return path different from the path of signal parts, and thus the spilled GND has to be cut to several separate parts connected together only at input voltage connector. This kind of layout is reffered as a star ground structure \cite{star}.
+To allow all the currents to have their return path with a sufficient conductivity, the main GND signal has to be spilled all around the circuit board. Even a small resistances in these paths may cause disturbing voltage dropouts. Currents from non-signal parts such as charge pump should have their return path different from the path of signal parts, and thus the spilled GND has to be cut to two separate parts (signal and bias supply) connected together only at input voltage connector. This kind of layout is reffered as a star ground structure \cite{star}.
 
 \par
-The shielding box has to be connected to GND in carefully selected place to prevent the induced currents from shielding to flow over the signal ground of the detector. The best place to connect the shielding box with GND is near the input voltage connector.
+The shielding box has to be connected to GND in specific place to prevent the induced currents from shielding to flow over the signal ground of the detector. The best place to connect the shielding box with GND is near the power supply connector.
 
 
 \section{Photodiode input and preamplifier}
-The photodiode is situated inside the box, and the cathode is connected to bias voltage and to preamplifier (CR-110) by capacitive coupling (10 nF capacitor). CR-110 application note also mentions an optional 220 $\Omega$ resistor connected before coupling capacitor to prevent CR-110 breakdown by large current spikes. Our experiences show that this resistor should not be omitted.
+The photodiode is situated inside the box, and the cathode is connected to bias voltage and to preamplifier (CR-110) by capacitive coupling (10 nF capacitor). CR-110 application note also mentions an optional 220 $\Omega$ resistor connected before coupling capacitor to prevent CR-110 breakdown by large current spikes. Our experiences show that this resistor should not be omitted. The signal route from photodiode to preamplifier input has to be as short as possible. 
 
-\par
-The signal route has to be as short as possible. The layout should also be designed in ways to reduce the parasitic capacitances at the preamplifier input - the cooper connected to ground (GND) should be removed from areas around the signal input route and around input bias voltage route. 
-
-\section{Amplification}
-The preamplifier output is routed over capacitive coupling (to eliminate unwanted offset) and over potentiometer divider (to adjust signal amplitude) to the amplification stages. 
-
-First amplification is achieved by two non-inverting amplifiers with OPA847 opamps. Each stage has the amplification of 32$\times$ (or less, this is different for every of our prototypes). Additional amplification 10$\times$ is done by shaper module CR-220. The OPA847 opamp datasheet \cite{OPA847} describes that these fast opamps are prone to unwanted oscillations, and therefore the GND around the opamp must be removed from both sides of the PCB. The output of shaper module is routed directly to output buffer opamp Max4201. The end of chain is buffered and connected to the output SMA connector mounted onto the aluminium box.
+\section{Amplification and shaping}
+The preamplifier output is routed over capacitive coupling (to eliminate unwanted offset) and over potentiometer divider (to adjust signal amplitude) to the amplification stages. First amplification is achieved by two non-inverting amplifiers with OPA847 opamps. Each stage has the amplification of 32$\times$ (or less, this is different for every of our prototypes). Additional amplification 10$\times$ is done by shaper module CR-200. The OPA847 opamp datasheet \cite{OPA847} describes that these fast opamps are prone to unwanted oscillations, and therefore the GND around the opamp must be removed from both sides of the PCB. The output of shaper module is routed directly to output buffer opamp MAX4201, which is connected to the output SMA connector mounted onto the aluminium box.
 
 
 \section{Voltage supply}

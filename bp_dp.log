@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.6.18)  9 MAY 2024 03:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.6.18)  10 MAY 2024 03:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -913,11 +913,7 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count312
 \@quotereset=\count313
-(./bp_dp.aux
-
-LaTeX Warning: Label `trans' multiply defined.
-
-)
+(./bp_dp.aux)
 \openout1 = `bp_dp.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 146.
@@ -1246,200 +1242,190 @@ Chapter 5.
 <./pictures/chain.png, id=582, 234.43683pt x 1025.00012pt>
 File: ./pictures/chain.png Graphic file (type png)
 <use ./pictures/chain.png>
-Package pdftex.def Info: ./pictures/chain.png  used on input line 13.
+Package pdftex.def Info: ./pictures/chain.png  used on input line 15.
 (pdftex.def)             Requested size: 82.05411pt x 358.75542pt.
 [31
 
 ] [32 <./pictures/chain.png>]
-<./pictures/shielding.png, id=597, 932.48375pt x 844.15375pt>
+<./pictures/shielding.png, id=596, 932.48375pt x 844.15375pt>
 File: ./pictures/shielding.png Graphic file (type png)
 <use ./pictures/shielding.png>
-Package pdftex.def Info: ./pictures/shielding.png  used on input line 42.
+Package pdftex.def Info: ./pictures/shielding.png  used on input line 54.
 (pdftex.def)             Requested size: 326.3742pt x 295.45824pt.
  [33 <./pictures/shielding.png>]
 <./pictures/champlifier.png, id=607, 961.5925pt x 514.92375pt>
 File: ./pictures/champlifier.png Graphic file (type png)
 <use ./pictures/champlifier.png>
-Package pdftex.def Info: ./pictures/champlifier.png  used on input line 70.
+Package pdftex.def Info: ./pictures/champlifier.png  used on input line 81.
 (pdftex.def)             Requested size: 384.63019pt x 205.96585pt.
 <./pictures/NoiseEquiv.png, id=610, 920.43875pt x 723.70375pt>
 File: ./pictures/NoiseEquiv.png Graphic file (type png)
 <use ./pictures/NoiseEquiv.png>
-Package pdftex.def Info: ./pictures/NoiseEquiv.png  used on input line 82.
+Package pdftex.def Info: ./pictures/NoiseEquiv.png  used on input line 87.
 (pdftex.def)             Requested size: 368.16898pt x 289.47636pt.
- [34 <./pictures/champlifier.png>]
-
-LaTeX Warning: Reference `transNoise' on page 35 undefined on input line 89.
-
-[35 <./pictures/NoiseEquiv.png>]
-<./pictures/CRpreamp.png, id=633, 652.4375pt x 481.8pt>
+ [34 <./pictures/champlifier.png>] [35 <./pictures/NoiseEquiv.png>]
+<./pictures/CRpreamp.png, id=635, 652.4375pt x 481.8pt>
 File: ./pictures/CRpreamp.png Graphic file (type png)
 <use ./pictures/CRpreamp.png>
-Package pdftex.def Info: ./pictures/CRpreamp.png  used on input line 124.
+Package pdftex.def Info: ./pictures/CRpreamp.png  used on input line 133.
 (pdftex.def)             Requested size: 228.35654pt x 168.63252pt.
- [36 <./pictures/CRpreamp.png>]
-<./pictures/CRshaper.png, id=650, 951.555pt x 277.035pt>
+<./pictures/CRshaper.png, id=642, 951.555pt x 277.035pt>
 File: ./pictures/CRshaper.png Graphic file (type png)
 <use ./pictures/CRshaper.png>
-Package pdftex.def Info: ./pictures/CRshaper.png  used on input line 155.
+Package pdftex.def Info: ./pictures/CRshaper.png  used on input line 154.
 (pdftex.def)             Requested size: 333.04924pt x 96.9637pt.
-)
-(./Algorytms.tex [37 <./pictures/CRshaper.png>]
+ [36 <./pictures/CRpreamp.png>]) (./Algorytms.tex [37 <./pictures/CRshaper.png>
+]
 Chapter 6.
-<./pictures/SecondDerivGraph.png, id=666, 4512.86pt x 2481.27pt>
-File: ./pictures/SecondDerivGraph.png Graphic file (type png)
-<use ./pictures/SecondDerivGraph.png>
-Package pdftex.def Info: ./pictures/SecondDerivGraph.png  used on input line 17
-.
+<./pictures/DataGraph.png, id=669, 4512.86pt x 2481.27pt>
+File: ./pictures/DataGraph.png Graphic file (type png)
+<use ./pictures/DataGraph.png>
+Package pdftex.def Info: ./pictures/DataGraph.png  used on input line 19.
 (pdftex.def)             Requested size: 473.82986pt x 260.52211pt.
 
-Overfull \hbox (32.81213pt too wide) in paragraph at lines 17--18
+Overfull \hbox (32.81213pt too wide) in paragraph at lines 19--20
  [][] 
  []
 
 [38
 
 ]
-<./pictures/DataGraph.png, id=672, 4512.86pt x 2481.27pt>
-File: ./pictures/DataGraph.png Graphic file (type png)
-<use ./pictures/DataGraph.png>
-Package pdftex.def Info: ./pictures/DataGraph.png  used on input line 25.
+<./pictures/SecondDerivGraph.png, id=677, 4512.86pt x 2481.27pt>
+File: ./pictures/SecondDerivGraph.png Graphic file (type png)
+<use ./pictures/SecondDerivGraph.png>
+Package pdftex.def Info: ./pictures/SecondDerivGraph.png  used on input line 27
+.
 (pdftex.def)             Requested size: 473.82986pt x 260.52211pt.
 
-Overfull \hbox (32.81213pt too wide) in paragraph at lines 25--26
+Overfull \hbox (32.81213pt too wide) in paragraph at lines 27--28
  [][] 
  []
 
-) (./PINtesting.tex [39 <./pictures/SecondDerivGraph.png> <./pictures/DataGraph
+) (./PINtesting.tex [39 <./pictures/DataGraph.png> <./pictures/SecondDerivGraph
 .png>]
 Chapter 7.
-<./pictures/ORTECbin.jpg, id=680, 4143.48pt x 3107.61pt>
+<./pictures/ORTECbin.jpg, id=684, 4143.48pt x 3107.61pt>
 File: ./pictures/ORTECbin.jpg Graphic file (type jpg)
 <use ./pictures/ORTECbin.jpg>
-Package pdftex.def Info: ./pictures/ORTECbin.jpg  used on input line 10.
+Package pdftex.def Info: ./pictures/ORTECbin.jpg  used on input line 12.
 (pdftex.def)             Requested size: 372.89711pt x 279.67284pt.
 [40
 
 ]
-<./pictures/ORTECsetup.jpg, id=686, 4143.48pt x 3107.61pt>
-File: ./pictures/ORTECsetup.jpg Graphic file (type jpg)
-<use ./pictures/ORTECsetup.jpg>
-Package pdftex.def Info: ./pictures/ORTECsetup.jpg  used on input line 21.
-(pdftex.def)             Requested size: 372.89711pt x 279.67284pt.
- [41 <./pictures/ORTECbin.jpg>]
-<./pictures/ShieldCrate.jpg, id=693, 4143.48pt x 3107.61pt>
+
+LaTeX Warning: Reference `box' on page 41 undefined on input line 25.
+
+<./pictures/ShieldCrate.jpg, id=691, 4143.48pt x 3107.61pt>
 File: ./pictures/ShieldCrate.jpg Graphic file (type jpg)
 <use ./pictures/ShieldCrate.jpg>
-Package pdftex.def Info: ./pictures/ShieldCrate.jpg  used on input line 37.
+Package pdftex.def Info: ./pictures/ShieldCrate.jpg  used on input line 32.
 (pdftex.def)             Requested size: 372.89711pt x 279.67284pt.
- [42 <./pictures/ORTECsetup.jpg>]
-<./pictures/chlazeniLedem.jpg, id=701, 2315.65125pt x 2330.7075pt>
-File: ./pictures/chlazeniLedem.jpg Graphic file (type jpg)
-<use ./pictures/chlazeniLedem.jpg>
-Package pdftex.def Info: ./pictures/chlazeniLedem.jpg  used on input line 62.
+[41 <./pictures/ORTECbin.jpg>]
+<./pictures/chlazeniLedem.png, id=697, 2315.65125pt x 2330.7075pt>
+File: ./pictures/chlazeniLedem.png Graphic file (type png)
+<use ./pictures/chlazeniLedem.png>
+Package pdftex.def Info: ./pictures/chlazeniLedem.png  used on input line 58.
 (pdftex.def)             Requested size: 208.39961pt x 209.75462pt.
-<./pictures/TempDiff.png, id=702, 3509.11pt x 2481.27pt>
+<./pictures/TempDiff.png, id=698, 3509.11pt x 2481.27pt>
 File: ./pictures/TempDiff.png Graphic file (type png)
 <use ./pictures/TempDiff.png>
-Package pdftex.def Info: ./pictures/TempDiff.png  used on input line 72.
+Package pdftex.def Info: ./pictures/TempDiff.png  used on input line 68.
 (pdftex.def)             Requested size: 456.20032pt x 322.57643pt.
 
-Overfull \hbox (15.18259pt too wide) in paragraph at lines 72--73
+Overfull \hbox (15.18259pt too wide) in paragraph at lines 68--69
  [][] 
  []
 
-[43 <./pictures/ShieldCrate.jpg> <./pictures/chlazeniLedem.jpg>]
+[42 <./pictures/ShieldCrate.jpg> <./pictures/chlazeniLedem.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 89.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 89.
+(hyperref)                removing `math shift' on input line 77.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 89.
+(hyperref)                removing `superscript' on input line 77.
 
 
-LaTeX Warning: Reference `datS14605' on page 44 undefined on input line 103.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 77.
 
-[44 <./pictures/TempDiff.png>]
-<./pictures/S14GammaTest.png, id=717, 4010.985pt x 2481.27pt>
+<./pictures/ORTECsetup.jpg, id=707, 4143.48pt x 3107.61pt>
+File: ./pictures/ORTECsetup.jpg Graphic file (type jpg)
+<use ./pictures/ORTECsetup.jpg>
+Package pdftex.def Info: ./pictures/ORTECsetup.jpg  used on input line 90.
+(pdftex.def)             Requested size: 372.89711pt x 279.67284pt.
+[43 <./pictures/TempDiff.png>]
+<./pictures/S14GammaTest.png, id=718, 4010.985pt x 2481.27pt>
 File: ./pictures/S14GammaTest.png Graphic file (type png)
 <use ./pictures/S14GammaTest.png>
-Package pdftex.def Info: ./pictures/S14GammaTest.png  used on input line 108.
+Package pdftex.def Info: ./pictures/S14GammaTest.png  used on input line 103.
 (pdftex.def)             Requested size: 501.3719pt x 310.15799pt.
 
-Overfull \hbox (60.35417pt too wide) in paragraph at lines 108--109
+Overfull \hbox (60.35417pt too wide) in paragraph at lines 103--104
  [][] 
  []
 
-<./pictures/BPW34GammaTest.png, id=718, 4010.985pt x 2481.27pt>
+[44 <./pictures/ORTECsetup.jpg>]
+<./pictures/BPW34GammaTest.png, id=725, 4010.985pt x 2481.27pt>
 File: ./pictures/BPW34GammaTest.png Graphic file (type png)
 <use ./pictures/BPW34GammaTest.png>
-Package pdftex.def Info: ./pictures/BPW34GammaTest.png  used on input line 124.
+Package pdftex.def Info: ./pictures/BPW34GammaTest.png  used on input line 120.
 
 (pdftex.def)             Requested size: 501.3719pt x 310.15799pt.
 
-Overfull \hbox (60.35417pt too wide) in paragraph at lines 124--125
+Overfull \hbox (60.35417pt too wide) in paragraph at lines 120--121
  [][] 
  []
 
 [45 <./pictures/S14GammaTest.png>]
-<./pictures/OPF430GammaTest.png, id=724, 4010.985pt x 2481.27pt>
+<./pictures/OPF430GammaTest.png, id=733, 4010.985pt x 2481.27pt>
 File: ./pictures/OPF430GammaTest.png Graphic file (type png)
 <use ./pictures/OPF430GammaTest.png>
-Package pdftex.def Info: ./pictures/OPF430GammaTest.png  used on input line 138
+Package pdftex.def Info: ./pictures/OPF430GammaTest.png  used on input line 133
 .
 (pdftex.def)             Requested size: 501.3719pt x 310.15799pt.
 
-Overfull \hbox (60.35417pt too wide) in paragraph at lines 138--139
+Overfull \hbox (60.35417pt too wide) in paragraph at lines 133--134
  [][] 
  []
 
 [46 <./pictures/BPW34GammaTest.png>]) (./PCBconstruct.tex [47 <./pictures/OPF43
 0GammaTest.png>]
 Chapter 8.
-<./pictures/SemiInCrateInside.png, id=739, 3114.38531pt x 4148.7497pt>
+<./pictures/SemiInCrateInside.png, id=748, 3114.38531pt x 4148.7497pt>
 File: ./pictures/SemiInCrateInside.png Graphic file (type png)
 <use ./pictures/SemiInCrateInside.png>
 Package pdftex.def Info: ./pictures/SemiInCrateInside.png  used on input line 1
-1.
+2.
 (pdftex.def)             Requested size: 311.45677pt x 414.89928pt.
 [48
 
 ]
-<./pictures/SemiInCrate.png, id=747, 4147.99687pt x 3113.6325pt>
+<./pictures/SemiInCrate.png, id=758, 4147.99687pt x 3113.6325pt>
 File: ./pictures/SemiInCrate.png Graphic file (type png)
 <use ./pictures/SemiInCrate.png>
-Package pdftex.def Info: ./pictures/SemiInCrate.png  used on input line 20.
+Package pdftex.def Info: ./pictures/SemiInCrate.png  used on input line 21.
 (pdftex.def)             Requested size: 414.82399pt x 311.38148pt.
  [49 <./pictures/SemiInCrateInside.png>] [50 <./pictures/SemiInCrate.png>]
-<./pictures/schemaPopis.png, id=761, 1275.26437pt x 670.00313pt>
+<./pictures/schemaPopis.png, id=770, 1275.26437pt x 670.00313pt>
 File: ./pictures/schemaPopis.png Graphic file (type png)
 <use ./pictures/schemaPopis.png>
-Package pdftex.def Info: ./pictures/schemaPopis.png  used on input line 32.
+Package pdftex.def Info: ./pictures/schemaPopis.png  used on input line 33.
 (pdftex.def)             Requested size: 637.63063pt x 335.00075pt.
 
 [51 <./pictures/schemaPopis.png>]
-<./pictures/S14topLay.png, id=770, 255.20343pt x 462.22687pt>
+<./pictures/S14topLay.png, id=779, 255.20343pt x 462.22687pt>
 File: ./pictures/S14topLay.png Graphic file (type png)
 <use ./pictures/S14topLay.png>
-Package pdftex.def Info: ./pictures/S14topLay.png  used on input line 42.
+Package pdftex.def Info: ./pictures/S14topLay.png  used on input line 43.
 (pdftex.def)             Requested size: 204.16301pt x 369.782pt.
-<./pictures/S14bottomLay.png, id=773, 255.20343pt x 465.99094pt>
+<./pictures/S14bottomLay.png, id=782, 255.20343pt x 465.99094pt>
 File: ./pictures/S14bottomLay.png Graphic file (type png)
 <use ./pictures/S14bottomLay.png>
-Package pdftex.def Info: ./pictures/S14bottomLay.png  used on input line 50.
+Package pdftex.def Info: ./pictures/S14bottomLay.png  used on input line 51.
 (pdftex.def)             Requested size: 204.16301pt x 372.79324pt.
- [52 <./pictures/S14topLay.png> <./pictures/S14bottomLay.png>]
-Overfull \hbox (1.8138pt too wide) in paragraph at lines 77--78
-[]\OT1/cmr/m/n/12 First am-pli-fi-ca-tion is achieved by two non-inverting am-p
-li-fiers with OPA847 opamps.
- []
-
-[53]) (./PCBmeas.tex [54]
+ [52 <./pictures/S14topLay.png> <./pictures/S14bottomLay.png>] [53]) (./PCBmeas
+.tex [54]
 Chapter 9.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1453,7 +1439,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-<./pictures/TransducerSetup.png, id=794, 4153.26656pt x 3110.62125pt>
+<./pictures/TransducerSetup.png, id=803, 4153.26656pt x 3110.62125pt>
 File: ./pictures/TransducerSetup.png Graphic file (type png)
 <use ./pictures/TransducerSetup.png>
 Package pdftex.def Info: ./pictures/TransducerSetup.png  used on input line 25.
@@ -1462,7 +1448,7 @@ Package pdftex.def Info: ./pictures/TransducerSetup.png  used on input line 25.
 [55
 
 ]
-<./pictures/SemiSpectre.png, id=800, 4010.985pt x 2481.27pt>
+<./pictures/SemiSpectre.png, id=809, 4010.985pt x 2481.27pt>
 File: ./pictures/SemiSpectre.png Graphic file (type png)
 <use ./pictures/SemiSpectre.png>
 Package pdftex.def Info: ./pictures/SemiSpectre.png  used on input line 38.
@@ -1473,7 +1459,7 @@ Overfull \hbox (60.35417pt too wide) in paragraph at lines 38--39
  []
 
 [56 <./pictures/TransducerSetup.png>]
-<./pictures/BPW34Spectre.png, id=808, 4010.985pt x 2481.27pt>
+<./pictures/BPW34Spectre.png, id=817, 4010.985pt x 2481.27pt>
 File: ./pictures/BPW34Spectre.png Graphic file (type png)
 <use ./pictures/BPW34Spectre.png>
 Package pdftex.def Info: ./pictures/BPW34Spectre.png  used on input line 49.
@@ -1484,7 +1470,7 @@ Overfull \hbox (60.35417pt too wide) in paragraph at lines 49--50
  []
 
 [57 <./pictures/SemiSpectre.png>]
-<./pictures/PMTSpectre.png, id=818, 4010.985pt x 2481.27pt>
+<./pictures/PMTSpectre.png, id=827, 4010.985pt x 2481.27pt>
 File: ./pictures/PMTSpectre.png Graphic file (type png)
 <use ./pictures/PMTSpectre.png>
 Package pdftex.def Info: ./pictures/PMTSpectre.png  used on input line 61.
@@ -1495,7 +1481,7 @@ Overfull \hbox (60.35417pt too wide) in paragraph at lines 61--62
  []
 
 [58 <./pictures/BPW34Spectre.png>]
-<./pictures/GasSpectre.png, id=825, 4010.985pt x 2481.27pt>
+<./pictures/GasSpectre.png, id=834, 4010.985pt x 2481.27pt>
 File: ./pictures/GasSpectre.png Graphic file (type png)
 <use ./pictures/GasSpectre.png>
 Package pdftex.def Info: ./pictures/GasSpectre.png  used on input line 68.
@@ -1508,7 +1494,7 @@ Overfull \hbox (60.35417pt too wide) in paragraph at lines 68--69
 [59 <./pictures/PMTSpectre.png> <./pictures/GasSpectre.png>]) (./MossMeas.tex
 [60] [61]
 Chapter 10.
-<./pictures/MossSemi.png, id=854, 4010.985pt x 2481.27pt>
+<./pictures/MossSemi.png, id=863, 4010.985pt x 2481.27pt>
 File: ./pictures/MossSemi.png Graphic file (type png)
 <use ./pictures/MossSemi.png>
 Package pdftex.def Info: ./pictures/MossSemi.png  used on input line 20.
@@ -1521,7 +1507,7 @@ Overfull \hbox (60.35417pt too wide) in paragraph at lines 20--21
 [62
 
 ]
-<./pictures/MossGas.png, id=862, 4010.985pt x 2481.27pt>
+<./pictures/MossGas.png, id=872, 4010.985pt x 2481.27pt>
 File: ./pictures/MossGas.png Graphic file (type png)
 <use ./pictures/MossGas.png>
 Package pdftex.def Info: ./pictures/MossGas.png  used on input line 28.
@@ -1531,7 +1517,7 @@ Overfull \hbox (60.35417pt too wide) in paragraph at lines 28--29
  [][] 
  []
 
-<./pictures/MossPMT.png, id=863, 4010.985pt x 2481.27pt>
+<./pictures/MossPMT.png, id=873, 4010.985pt x 2481.27pt>
 File: ./pictures/MossPMT.png Graphic file (type png)
 <use ./pictures/MossPMT.png>
 Package pdftex.def Info: ./pictures/MossPMT.png  used on input line 36.
@@ -1748,13 +1734,13 @@ Package rerunfilecheck Warning: File `bp_dp.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `bp_dp.out':
-(rerunfilecheck)             Before: 58DAF53FE4D1C084D9C8A8C430132AF1;12281
-(rerunfilecheck)             After:  67186F0760484A17B9089AE8C46FB3B5;12304.
+(rerunfilecheck)             Before: D76E8355CB33E2C95E4FEB2223EBCFBC;12268
+(rerunfilecheck)             After:  22F2F4EE51882383FD21C477C1833E55;12407.
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -1768,8 +1754,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 322.
  ) 
 Here is how much of TeX's memory you used:
  19127 strings out of 494848
- 301954 string characters out of 6178430
- 721468 words of memory out of 5000000
+ 301948 string characters out of 6178430
+ 722640 words of memory out of 5000000
  21956 multiletter control sequences out of 15000+600000
  16577 words of font info for 62 fonts, out of 8000000 for 9000
  46 hyphenation exceptions out of 8191
@@ -1788,10 +1774,10 @@ ic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
 /msbm10.pfb>
-Output written on bp_dp.pdf (68 pages, 118045102 bytes).
+Output written on bp_dp.pdf (68 pages, 131475957 bytes).
 PDF statistics:
- 1053 PDF objects out of 1200 (max. 8388607)
- 889 compressed objects within 9 object streams
+ 1062 PDF objects out of 1200 (max. 8388607)
+ 897 compressed objects within 9 object streams
  240 named destinations out of 1000 (max. 500000)
  732 words of extra memory for PDF output out of 10000 (max. 10000000)
 
