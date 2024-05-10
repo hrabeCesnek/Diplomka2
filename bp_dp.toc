@@ -119,7 +119,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.1}Electronic schematic and layout}{48}{section.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Grounding and Shielding}{53}{section.8.2}
+\contentsline {section}{\numberline {8.2}Grounding and shielding}{53}{section.8.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.3}Photodiode input and preamplifier}{53}{section.8.3}
 \defcounter {refsection}{0}\relax 
@@ -127,7 +127,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.5}Voltage supply}{53}{section.8.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}$^{57}$Co spectra measurement with integrated amplifier}{55}{chapter.9}
+\contentsline {chapter}{\numberline {9}$^{57}$Co MCA measurement with integrated amplifier}{55}{chapter.9}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9.1}Measurement setup}{55}{section.9.1}
 \defcounter {refsection}{0}\relax 
@@ -139,4 +139,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {10}M\IeC {\"o}ssbauer spectra measurement}{62}{chapter.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Conclusion}{65}{chapter*.49}
+\contentsline {chapter}{Conclusion}{66}{chapter*.50}

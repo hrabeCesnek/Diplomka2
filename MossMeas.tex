@@ -1,24 +1,33 @@
 \chapter{Mössbauer spectra measurement}
-The previous chapter compared the three detectors in detection efficiency of 14.4 keV photons. This chapter compares them in an efficiency of measuring the MS spectra.
+The previous chapter compared the three detectors in their efficiency of detecting 14.4 keV photons. This chapter compares them in the efficiency of measuring the MS spectra. The good detection efficiency of 14.4 keV photons does not necessarily imply a good MS spectrum measurement efficiency and vice versa. Effects that do not correspond to 14.4 keV photon detection (e.g. Compton continuum) reduce the SNR of MS spectra. To determine this efficiency, a setup similar to that used for the MCA measurement is again used, with the addition of a sample with holder and transducer for Doppler energy modulation. The sample chosen for this measurement is K$_{3}[$Fe(CN)$_{6}]$, which is characterised by a singlet spectrum.
 \par
-The good detection efficiency of 14.4 keV photons does not necessarily imply the good efficiency of MS spectra measurement and vice versa. Effects, which are not corresponding to the full 14.4 keV photon detection (for example Compton continuum) and generate counts at the channel interval selected for MS measurement, decrease the SNR of MS spectra. To determine this efficiency, setup similar to the one intended for MCA measurement is used again, however, additional parts has to be employed such as a moving transducer and a sample placed into a sample holder. As a sample for this measurement was chosen K$_{3}[$Fe(CN)$_{6}]$, which is characterized by a singlet spectrum.
-\par
-The entire MS setup is controlled by the special control unit controlled by PC software \cite{STEJSKAL2019thesis}, both developed on DEP. Control unit drives the transducer, regulates its velocity and also processes the incoming pulses from the detector. The control software also takes care of all the data processing and produces MS spectra data files, which are analysed in this chapter.
+The whole MS setup is controlled by the Mössbauer spectrometer unit controlled by the PC software \cite{STEJSKAL2019thesis}, both developed at DEP. The control unit drives the transducer, regulates its speed and also processes the incoming pulses from the detector. The control software also does all the data processing and acquires the MS spectrum data files that are analysed in this chapter.
 
 \par
-The detector's output is routed directly to the MS spectrometer control unit, where the channel interval for MS spectra measurement is selected. However, the previous MCA showed that the interval of 14.4 keV peak is different for every detector, so, to compare the detectors in MS efficiency, the channel interval  has to be selected according to the location of 14.4 keV energy peak. We selected this interval as 90$\%$ of FWHM of 14.4 keV energy peak with respect to the results of MCA measurement for each detector.
+The detector output is routed directly to the MS spectrometer control unit where the channel interval for the MS spectrum measurement is selected. However, the previous MCA showed that the interval of the 14.4 keV peak is different for each detector, so in order to compare the detectors in MS efficiency, the channel interval must be selected according to the location of the 14.4 keV energy peak. We selected this interval as 90$\%$ of the FWHM of the 14.4 keV energy peak with respect to the results of the MCA measurement for each detector.
+%The previous chapter compared the three detectors in detection efficiency of 14.4 keV photons. This chapter compares them in an efficiency of measuring the MS spectra. The good detection efficiency of 14.4 keV photons does not necessarily imply the good efficiency of MS spectra measurement and vice versa. Effects, which are not corresponding to the 14.4 keV photon detection (for example Compton continuum), decrease the SNR of MS spectra. To determine this efficiency, setup similar to the one intended for MCA measurement is used again, only sample with holder and transducer for Doppler energy modulation are added. As a sample for this measurement was chosen K$_{3}[$Fe(CN)$_{6}]$, which is characterized by a singlet spectrum.
+%\par
+%The entire MS setup is controlled by the by the Mössbauer spectrometer unit controlled by PC software \cite{STEJSKAL2019thesis}, both developed on DEP. Control unit drives the transducer, regulates its velocity and also processes the incoming pulses from the detector. The control software also takes care of all the data processing and acquires MS spectra data files, which are analysed in this chapter.
+%
+%\par
+%The detector's output is routed directly to the MS spectrometer control unit, where the channel interval for MS spectra measurement is selected. However, the previous MCA showed that the interval of 14.4 keV peak is different for every detector, so, to compare the detectors in MS efficiency, the channel interval  has to be selected according to the location of 14.4 keV energy peak. We selected this interval as 90$\%$ of FWHM of 14.4 keV energy peak with respect to the results of MCA measurement for each detector.
 \par
-$^{57}$Co radiation source is mounted onto the moving part of transducer of the "piglet" type also developed on DEP. The transducer is very sensitive to the vibrations and thus it requires to be placed on the soft mat along with the detector and the sample holder. Before the measurement, the velocity calibration routines provided by control SW have to be performed on the transducer to obtain the scaling coefficient which is then used to recalculate the velocity axis from the arbitrary units into the mm$\cdot$s$^{-1}$. 
+The transducer is very sensitive to vibration and must therefore be placed on the anti-vibration mat together with the detector and sample holder. Before the measurement, the velocity calibration routines provided by the control software must be run on the transducer to obtain the scaling coefficient, which is then used to recalculate the velocity axis from the arbitrary units to mm$\cdot$s$^{-1}$. 
 
 \par
-The three measurements (figures \ref{Si PIN detector MS spectra.}, \ref{Gas detector MS spectra.} and \ref{Scintillator detector MS spectra.}) were performed with the calibrated transducer, one for every detector. One MS spectra was measured for 20 hours including only the valid cycles when the velocity error did not exceed the defined limit.
+The MS spectrum for each detector can be seen in the figures \ref{Si PIN detector MS spectra.}, \ref{Gas detector MS spectra.} and \ref{Scintillator detector MS spectra.}. One MS spectrum was measured for 20 hours, including only the valid cycles where the velocity error did not exceed the defined limit.
+%\par
+%The transducer is very sensitive to the vibrations and thus it requires to be placed on the antivibration mat along with the detector and the sample holder. Before the measurement, the velocity calibration routines provided by control SW have to be performed on the transducer to obtain the scaling coefficient which is then used to recalculate the velocity axis from the arbitrary units into the mm$\cdot$s$^{-1}$. 
+%
+%\par
+%The MS spectrum for each detector can be seen in the figures \ref{Si PIN detector MS spectra.}, \ref{Gas detector MS spectra.} and \ref{Scintillator detector MS spectra.}. One MS spectra was measured for 20 hours including only the valid cycles when the velocity error did not exceed the defined limit.
 
 
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.125, angle = 0]{./pictures/MossSemi.png}
-\caption{Si PIN detector K$_{3}[$Fe(CN)$_{6}]$ MS spectra.}
+\caption{Si PIN detector K$_{3}[$Fe(CN)$_{6}]$ MS spectrum.}
 \label{Si PIN detector MS spectra.}
 
 \end{figure}
@@ -26,7 +35,7 @@ The three measurements (figures \ref{Si PIN detector MS spectra.}, \ref{Gas dete
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.125, angle = 0]{./pictures/MossGas.png}
-\caption{Gas detector K$_{3}[$Fe(CN)$_{6}]$ MS spectra.}
+\caption{Gas detector K$_{3}[$Fe(CN)$_{6}]$ MS spectrum.}
 \label{Gas detector MS spectra.}
 
 \end{figure}
@@ -34,14 +43,15 @@ The three measurements (figures \ref{Si PIN detector MS spectra.}, \ref{Gas dete
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.125, angle = 0]{./pictures/MossPMT.png}
-\caption{Scintillator detector K$_{3}[$Fe(CN)$_{6}]$ MS spectra.}
+\caption{Scintillator detector K$_{3}[$Fe(CN)$_{6}]$ MS spectrum.}
 \label{Scintillator detector MS spectra.}
 
 \end{figure}
+Each spectrum is fitted by the Lorentzian in the form described by the equation \ref{lor}. However, when comparing the MS parameters between detectors, there was a problem with the different width of the line in each spectrum caused by the mechanical vibrations affecting the transducer. If the SNR$I_{\textrm{MS}}$ and $E_{\textrm{MS}}$ (equations \ref{SNR} and \ref{effect}), which both depend on $I_{\textrm{MS}}$, are to be comparable between measurements, it is necessary to recalculate $I_{\textrm{MS}}$ for each Lorentzian with respect to the same line width. The recalculation is based on the following consideration: The altered velocity signal may cause the variations in $\Gamma$ of a singlet Lorentzian curve, but its area $A$ (total number of counts), given by the equation \ref{area}, should remain unchanged by this effect. Thus, if $A$ is conserved although $\Gamma$ is changed, the new amplitudes $I_{\textrm{rec}}$ corresponding to the recalculated Lorentzians with the same $\Gamma_{\textrm{ref}}$ can be obtained by a simple relation $I_{\textrm{rec}} = \frac{\Gamma}{\Gamma_{\textrm{ref}}}I_{\textrm{original}}$. The reference $\Gamma_{\textrm{ref}}$ is the lowest $\Gamma$ of the spectra.
+The results obtained for each detector can be seen in the table \ref{mossres}.
 
-
-Every spectra is fitted by the Lorentzian in the form described by equation \ref{lor}. However, in order to compare the MS parameters between detectors, there was a problem with the different $\Gamma$ in every spectra, which is not caused by the detector, but probably by the transducer. If the SNR$_{\textrm{MS}}$ and $E_{\textrm{MS}}$ (equations \ref{SNR} and \ref{effect}), which both depend on $I$, are to be comparable between the measurements, it is necessary to recalculate the $I$ for every Lorentzian. The recalculation is based on the following consideration: The altered velocity signal can cause the variations in $\Gamma$ of a singlet Lorentzian curve, however, its area $A$ (total number of counts) given by equation \ref{area} should be left unchanged by this effect. So if the $A$ is conserved although the $\Gamma$ is changed, the new amplitudes $I_{\textrm{rec}}$ corresponding to the recalculated Lorentzians with the same $\Gamma_{\textrm{ref}}$  can be obtained by a simple relation $I_{\textrm{rec}} = \frac{\Gamma}{\Gamma_{\textrm{ref}}}I$. As a reference $\Gamma_{\textrm{ref}}$ is taken the smallest $\Gamma$ of the three detectors.
-The results obtained for every detector can be seen in table \ref{mossres}.
+%Each spectrum is fitted by the Lorentzian in the form described by equation \ref{lor}. However, in order to compare the MS parameters between detectors, there was a problem with the different width of the line in each spectrum, which caused by the mechanical vibrations affecting the transducer. If the SNR$_{\textrm{MS}}$ and $E_{\textrm{MS}}$ (equations \ref{SNR} and \ref{effect}), which both depend on $I_{\textrm{MS}}$, are to be comparable between the measurements, it is necessary to recalculate the $$I_{\textrm{MS}}$ for every Lorentzian with respect to the same width of the line. The recalculation is based on the following consideration: The altered velocity signal can cause the variations in $\Gamma$ of a singlet Lorentzian curve, however, its area $A$ (total number of counts) given by equation \ref{area} should be left unchanged by this effect. So if the $A$ is conserved although the $\Gamma$ is changed, the new amplitudes $I_{\textrm{rec}}$ corresponding to the recalculated Lorentzians with the same $\Gamma_{\textrm{ref}}$  can be obtained by a simple relation $I_{\textrm{rec}} = \frac{\Gamma}{\Gamma_{\textrm{ref}}}I_{\textrm{original}}$. As a reference $\Gamma_{\textrm{ref}}$ is taken the smallest $\Gamma$ of the spectra.
+%The results obtained for each detector can be seen in table \ref{mossres}.
 
 \begin{table}[H]
 \centering
@@ -52,10 +62,10 @@ Si PIN & $27.4 \pm 0.5$    & $0.444 \pm 0.007$  \\ \hline
 gas & $35.7 \pm 0.5$    & $0.338 \pm 0.005$ \\ \hline
 scintillator  & $54.3 \pm 0.3$    & $0.355 \pm 0.002$ \\ \hline
 \end{tabular}
-\caption{Measured SNR$_{\textrm{MS}}$ and $E_{\textrm{MS}}$ for every detector.}
+\caption{Measured SNR$_{\textrm{MS}}$ and $E_{\textrm{MS}}$ for each detector.}
  \label{mossres}
 \end{table}
 
-The results show that the best SNR$_{\textrm{MS}}$ has the scintillator detector, and thus when it comes to acquiring the MS spectra in transmission geometry, the Si PIN detector is not the best candidate. However, the highest $E_{\textrm{MS}}$ is associated with the Si PIN, and thus it can be employed in some applications where $E_{\textrm{MS}}$ is an important parameter. 
-
+%The results show that the best SNR$_{\textrm{MS}}$ has the scintillator detector, and thus when it comes to acquiring the MS spectra in transmission geometry, the Si PIN detector is not the best candidate. However, the highest $E_{\textrm{MS}}$ is associated with the Si PIN, and thus it can be employed in some applications where $E_{\textrm{MS}}$ is an important parameter. 
+The results show that the best SNR${\textrm{MS}}$ is obtained with the scintillator detector, and thus the Si PIN detector is not the best candidate when it comes to acquiring MS spectra in transmission geometry. However, the highest $E_{\textrm{MS}}$ is associated with the Si PIN and therefore it can be used in some applications where $E_{\textrm{MS}}$ is an important parameter. 
 

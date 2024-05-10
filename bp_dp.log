@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.6.18)  10 MAY 2024 03:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.6.18)  10 MAY 2024 20:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1396,7 +1396,7 @@ Chapter 8.
 File: ./pictures/SemiInCrateInside.png Graphic file (type png)
 <use ./pictures/SemiInCrateInside.png>
 Package pdftex.def Info: ./pictures/SemiInCrateInside.png  used on input line 1
-2.
+3.
 (pdftex.def)             Requested size: 311.45677pt x 414.89928pt.
 [48
 
@@ -1404,25 +1404,25 @@ Package pdftex.def Info: ./pictures/SemiInCrateInside.png  used on input line 1
 <./pictures/SemiInCrate.png, id=758, 4147.99687pt x 3113.6325pt>
 File: ./pictures/SemiInCrate.png Graphic file (type png)
 <use ./pictures/SemiInCrate.png>
-Package pdftex.def Info: ./pictures/SemiInCrate.png  used on input line 21.
+Package pdftex.def Info: ./pictures/SemiInCrate.png  used on input line 22.
 (pdftex.def)             Requested size: 414.82399pt x 311.38148pt.
  [49 <./pictures/SemiInCrateInside.png>] [50 <./pictures/SemiInCrate.png>]
 <./pictures/schemaPopis.png, id=770, 1275.26437pt x 670.00313pt>
 File: ./pictures/schemaPopis.png Graphic file (type png)
 <use ./pictures/schemaPopis.png>
-Package pdftex.def Info: ./pictures/schemaPopis.png  used on input line 33.
+Package pdftex.def Info: ./pictures/schemaPopis.png  used on input line 34.
 (pdftex.def)             Requested size: 637.63063pt x 335.00075pt.
 
 [51 <./pictures/schemaPopis.png>]
 <./pictures/S14topLay.png, id=779, 255.20343pt x 462.22687pt>
 File: ./pictures/S14topLay.png Graphic file (type png)
 <use ./pictures/S14topLay.png>
-Package pdftex.def Info: ./pictures/S14topLay.png  used on input line 43.
+Package pdftex.def Info: ./pictures/S14topLay.png  used on input line 44.
 (pdftex.def)             Requested size: 204.16301pt x 369.782pt.
 <./pictures/S14bottomLay.png, id=782, 255.20343pt x 465.99094pt>
 File: ./pictures/S14bottomLay.png Graphic file (type png)
 <use ./pictures/S14bottomLay.png>
-Package pdftex.def Info: ./pictures/S14bottomLay.png  used on input line 51.
+Package pdftex.def Info: ./pictures/S14bottomLay.png  used on input line 52.
 (pdftex.def)             Requested size: 204.16301pt x 372.79324pt.
  [52 <./pictures/S14topLay.png> <./pictures/S14bottomLay.png>] [53]) (./PCBmeas
 .tex [54]
@@ -1442,93 +1442,94 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 <./pictures/TransducerSetup.png, id=803, 4153.26656pt x 3110.62125pt>
 File: ./pictures/TransducerSetup.png Graphic file (type png)
 <use ./pictures/TransducerSetup.png>
-Package pdftex.def Info: ./pictures/TransducerSetup.png  used on input line 25.
+Package pdftex.def Info: ./pictures/TransducerSetup.png  used on input line 29.
 
 (pdftex.def)             Requested size: 415.35098pt x 311.08035pt.
 [55
 
 ]
-<./pictures/SemiSpectre.png, id=809, 4010.985pt x 2481.27pt>
+<./pictures/SemiSpectre.png, id=810, 4010.985pt x 2481.27pt>
 File: ./pictures/SemiSpectre.png Graphic file (type png)
 <use ./pictures/SemiSpectre.png>
-Package pdftex.def Info: ./pictures/SemiSpectre.png  used on input line 38.
+Package pdftex.def Info: ./pictures/SemiSpectre.png  used on input line 40.
 (pdftex.def)             Requested size: 501.3719pt x 310.15799pt.
 
-Overfull \hbox (60.35417pt too wide) in paragraph at lines 38--39
+Overfull \hbox (60.35417pt too wide) in paragraph at lines 40--41
  [][] 
  []
 
 [56 <./pictures/TransducerSetup.png>]
-<./pictures/BPW34Spectre.png, id=817, 4010.985pt x 2481.27pt>
+<./pictures/BPW34Spectre.png, id=819, 4010.985pt x 2481.27pt>
 File: ./pictures/BPW34Spectre.png Graphic file (type png)
 <use ./pictures/BPW34Spectre.png>
-Package pdftex.def Info: ./pictures/BPW34Spectre.png  used on input line 49.
+Package pdftex.def Info: ./pictures/BPW34Spectre.png  used on input line 50.
 (pdftex.def)             Requested size: 501.3719pt x 310.15799pt.
 
-Overfull \hbox (60.35417pt too wide) in paragraph at lines 49--50
+Overfull \hbox (60.35417pt too wide) in paragraph at lines 50--51
  [][] 
  []
 
 [57 <./pictures/SemiSpectre.png>]
-<./pictures/PMTSpectre.png, id=827, 4010.985pt x 2481.27pt>
+<./pictures/PMTSpectre.png, id=830, 4010.985pt x 2481.27pt>
 File: ./pictures/PMTSpectre.png Graphic file (type png)
 <use ./pictures/PMTSpectre.png>
-Package pdftex.def Info: ./pictures/PMTSpectre.png  used on input line 61.
+Package pdftex.def Info: ./pictures/PMTSpectre.png  used on input line 63.
 (pdftex.def)             Requested size: 501.3719pt x 310.15799pt.
 
-Overfull \hbox (60.35417pt too wide) in paragraph at lines 61--62
+Overfull \hbox (60.35417pt too wide) in paragraph at lines 63--64
  [][] 
  []
 
-[58 <./pictures/BPW34Spectre.png>]
-<./pictures/GasSpectre.png, id=834, 4010.985pt x 2481.27pt>
+<./pictures/GasSpectre.png, id=831, 4010.985pt x 2481.27pt>
 File: ./pictures/GasSpectre.png Graphic file (type png)
 <use ./pictures/GasSpectre.png>
-Package pdftex.def Info: ./pictures/GasSpectre.png  used on input line 68.
+Package pdftex.def Info: ./pictures/GasSpectre.png  used on input line 69.
 (pdftex.def)             Requested size: 501.3719pt x 310.15799pt.
 
-Overfull \hbox (60.35417pt too wide) in paragraph at lines 68--69
+Overfull \hbox (60.35417pt too wide) in paragraph at lines 69--70
  [][] 
  []
 
-[59 <./pictures/PMTSpectre.png> <./pictures/GasSpectre.png>]) (./MossMeas.tex
-[60] [61]
+[58 <./pictures/BPW34Spectre.png>] [59 <./pictures/PMTSpectre.png> <./pictures/
+GasSpectre.png>] [60]) (./MossMeas.tex [61]
 Chapter 10.
-<./pictures/MossSemi.png, id=863, 4010.985pt x 2481.27pt>
+<./pictures/MossSemi.png, id=867, 4010.985pt x 2481.27pt>
 File: ./pictures/MossSemi.png Graphic file (type png)
 <use ./pictures/MossSemi.png>
-Package pdftex.def Info: ./pictures/MossSemi.png  used on input line 20.
+Package pdftex.def Info: ./pictures/MossSemi.png  used on input line 29.
 (pdftex.def)             Requested size: 501.3719pt x 310.15799pt.
 
-Overfull \hbox (60.35417pt too wide) in paragraph at lines 20--21
+Overfull \hbox (60.35417pt too wide) in paragraph at lines 29--30
  [][] 
  []
 
 [62
 
 ]
-<./pictures/MossGas.png, id=872, 4010.985pt x 2481.27pt>
+<./pictures/MossGas.png, id=875, 4010.985pt x 2481.27pt>
 File: ./pictures/MossGas.png Graphic file (type png)
 <use ./pictures/MossGas.png>
-Package pdftex.def Info: ./pictures/MossGas.png  used on input line 28.
+Package pdftex.def Info: ./pictures/MossGas.png  used on input line 37.
 (pdftex.def)             Requested size: 501.3719pt x 310.15799pt.
 
-Overfull \hbox (60.35417pt too wide) in paragraph at lines 28--29
+Overfull \hbox (60.35417pt too wide) in paragraph at lines 37--38
  [][] 
  []
 
-<./pictures/MossPMT.png, id=873, 4010.985pt x 2481.27pt>
+<./pictures/MossPMT.png, id=876, 4010.985pt x 2481.27pt>
 File: ./pictures/MossPMT.png Graphic file (type png)
 <use ./pictures/MossPMT.png>
-Package pdftex.def Info: ./pictures/MossPMT.png  used on input line 36.
+Package pdftex.def Info: ./pictures/MossPMT.png  used on input line 45.
 (pdftex.def)             Requested size: 501.3719pt x 310.15799pt.
 
-Overfull \hbox (60.35417pt too wide) in paragraph at lines 36--37
+Overfull \hbox (60.35417pt too wide) in paragraph at lines 45--46
  [][] 
  []
 
 [63 <./pictures/MossSemi.png> <./pictures/MossGas.png>]) [64 <./pictures/MossPM
 T.png>] [65
+
+] [66
 
 ]
 
@@ -1552,7 +1553,7 @@ Package biblatex Warning: '\mkdaterangeedtf' is deprecated.
 (biblatex)                Please use '\mkdaterangeiso'.
 
 
-Overfull \hbox (5.06134pt too wide) in paragraph at lines 312--312
+Overfull \hbox (5.06134pt too wide) in paragraph at lines 313--313
 []\OT1/cmr/m/n/12 RAMIREZ-JIMENEZ, F.J.; LOPEZ-CALLEJAS, R.; CERDEIRA-ALTUZARRA
 ,
  []
@@ -1562,7 +1563,7 @@ Package biblatex Warning: '\mkdaterangeedtf' is deprecated.
 (biblatex)                Please use '\mkdaterangeiso'.
 
 
-Overfull \hbox (8.26323pt too wide) in paragraph at lines 312--312
+Overfull \hbox (8.26323pt too wide) in paragraph at lines 313--313
 []\OT1/cmr/m/n/12 LUTZ, Ger-had. \OT1/cmr/m/it/12 Semi-con-duc-tor ra-di-a-tion
  de-tec-tors: De-vice physics\OT1/cmr/m/n/12 . Berlin: Springer,
  []
@@ -1584,7 +1585,7 @@ Package biblatex Warning: '\mkdaterangeedtf' is deprecated.
 (biblatex)                Please use '\mkdaterangeiso'.
 
 
-Overfull \hbox (0.43922pt too wide) in paragraph at lines 312--312
+Overfull \hbox (0.43922pt too wide) in paragraph at lines 313--313
 []\OT1/cmr/m/n/12 KOURIL, Lukas; PE-C-HOUSEK, Jiri; KO-HOUT, Pavel; JIRU[]S, Ma
 rek; SCHLAT-
  []
@@ -1605,7 +1606,7 @@ Package biblatex Warning: '\mkdaterangeedtf' is deprecated.
 Package biblatex Warning: '\mkdaterangeedtf' is deprecated.
 (biblatex)                Please use '\mkdaterangeiso'.
 
-[66
+[67
 
 ]
 
@@ -1625,7 +1626,7 @@ Package biblatex Warning: '\mkdaterangeedtf' is deprecated.
 (biblatex)                Please use '\mkdaterangeiso'.
 
 
-Overfull \hbox (11.82109pt too wide) in paragraph at lines 312--312
+Overfull \hbox (11.82109pt too wide) in paragraph at lines 313--313
 \OT1/cmtt/m/n/12 photonics / sites / documents / 99 _ SALES _ LIBRARY / ssd / h
 igh _ energy _ kspd9002e .
  []
@@ -1639,7 +1640,7 @@ Package biblatex Warning: '\mkdaterangeedtf' is deprecated.
 (biblatex)                Please use '\mkdaterangeiso'.
 
 
-Overfull \hbox (7.5243pt too wide) in paragraph at lines 312--312
+Overfull \hbox (7.5243pt too wide) in paragraph at lines 313--313
 []\OT1/cmr/m/n/12 HAMAMATSU. \OT1/cmr/m/it/12 HIGH VOLT-AGE POWER SUP-PLY SOCKE
 T AS-SEM-BLY (DP-
  []
@@ -1649,7 +1650,7 @@ Package biblatex Warning: '\mkdaterangeedtf' is deprecated.
 (biblatex)                Please use '\mkdaterangeiso'.
 
 
-Overfull \hbox (6.14609pt too wide) in paragraph at lines 312--312
+Overfull \hbox (6.14609pt too wide) in paragraph at lines 313--313
 \OT1/cmtt/m/n/12 / / www . hamamatsu . com / content / dam / hamamatsu -[] phot
 onics / sites / documents /
  []
@@ -1659,7 +1660,7 @@ Package biblatex Warning: '\mkdaterangeedtf' is deprecated.
 (biblatex)                Please use '\mkdaterangeiso'.
 
 
-Overfull \hbox (8.70929pt too wide) in paragraph at lines 312--312
+Overfull \hbox (8.70929pt too wide) in paragraph at lines 313--313
 \OT1/cmr/m/n/12 26]. Avail-able from: []$\OT1/cmtt/m/n/12 https : / / www . cre
 mat . com / applications / csp -[] application -[]
  []
@@ -1693,7 +1694,7 @@ Package biblatex Warning: '\mkdaterangeedtf' is deprecated.
 (biblatex)                Please use '\mkdaterangeiso'.
 
 
-Overfull \hbox (11.02495pt too wide) in paragraph at lines 312--312
+Overfull \hbox (11.02495pt too wide) in paragraph at lines 313--313
 []\OT1/cmr/m/n/12 ORTEC. \OT1/cmr/m/it/12 EASY-MCA-8K EASY-MCA-2K Dig-i-tal Gam
 ma-Ray Spec-trom-e-ter User's
  []
@@ -1706,7 +1707,7 @@ Package biblatex Warning: '\mkdaterangeedtf' is deprecated.
 Package biblatex Warning: '\mkdaterangeedtf' is deprecated.
 (biblatex)                Please use '\mkdaterangeiso'.
 
-[67]
+[68]
 
 Package biblatex Warning: '\mkdaterangeedtf' is deprecated.
 (biblatex)                Please use '\mkdaterangeiso'.
@@ -1721,26 +1722,17 @@ Package biblatex Warning: '\mkdaterangeedtf' is deprecated.
 
 
 AED: lastpage setting LastPage
-[68]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 322.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 322.
+[69]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 323.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 323.
  (./bp_dp.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 322.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 322.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 323.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 323.
+Package rerunfilecheck Info: File `bp_dp.out' has not changed.
+(rerunfilecheck)             Checksum: D0508EB0FDDF0FF16F8484C6BC2EF360;12387.
 
-
-Package rerunfilecheck Warning: File `bp_dp.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `bp_dp.out':
-(rerunfilecheck)             Before: D76E8355CB33E2C95E4FEB2223EBCFBC;12268
-(rerunfilecheck)             After:  22F2F4EE51882383FD21C477C1833E55;12407.
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -1750,16 +1742,16 @@ Package biblatex Warning: Please (re)run Biber on the file:
 Package logreq Info: Writing requests to 'bp_dp.run.xml'.
 \openout1 = `bp_dp.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 322.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 323.
  ) 
 Here is how much of TeX's memory you used:
- 19127 strings out of 494848
- 301948 string characters out of 6178430
- 722640 words of memory out of 5000000
+ 19129 strings out of 494848
+ 301966 string characters out of 6178430
+ 722663 words of memory out of 5000000
  21956 multiletter control sequences out of 15000+600000
  16577 words of font info for 62 fonts, out of 8000000 for 9000
  46 hyphenation exceptions out of 8191
- 44i,12n,49p,1212b,2720s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,12n,49p,1279b,2720s stack positions out of 5000i,500n,10000p,200000b,80000s
  <./bssb10.720pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcs
 c10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pf
@@ -1774,10 +1766,10 @@ ic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
 /msbm10.pfb>
-Output written on bp_dp.pdf (68 pages, 131475957 bytes).
+Output written on bp_dp.pdf (69 pages, 131476407 bytes).
 PDF statistics:
- 1062 PDF objects out of 1200 (max. 8388607)
- 897 compressed objects within 9 object streams
- 240 named destinations out of 1000 (max. 500000)
+ 1072 PDF objects out of 1200 (max. 8388607)
+ 905 compressed objects within 10 object streams
+ 242 named destinations out of 1000 (max. 500000)
  732 words of extra memory for PDF output out of 10000 (max. 10000000)
 
