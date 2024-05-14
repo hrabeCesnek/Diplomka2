@@ -131,7 +131,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortingtemplatename</bcf:key>
-      <bcf:value>ynt</bcf:value>
+      <bcf:value>none</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortsets</bcf:key>
@@ -1985,53 +1985,26 @@
     <bcf:citekey order="45">MCAOrtec</bcf:citekey>
     <bcf:citekey order="46">MARISCOTTI1967309</bcf:citekey>
     <bcf:citekey order="47">maestro</bcf:citekey>
-    <bcf:citekey order="48">eagle</bcf:citekey>
-    <bcf:citekey order="49">eagle</bcf:citekey>
-    <bcf:citekey order="50">eagle</bcf:citekey>
-    <bcf:citekey order="51">eagle</bcf:citekey>
-    <bcf:citekey order="52">eagle</bcf:citekey>
-    <bcf:citekey order="53">eagle</bcf:citekey>
-    <bcf:citekey order="54">star</bcf:citekey>
-    <bcf:citekey order="55">OPA847</bcf:citekey>
-    <bcf:citekey order="56">R6095</bcf:citekey>
-    <bcf:citekey order="57">C9028</bcf:citekey>
-    <bcf:citekey order="58">STEJSKAL2019thesis</bcf:citekey>
-    <bcf:citekey order="59">datS14605</bcf:citekey>
-    <bcf:citekey order="60">STEJSKAL2019thesis</bcf:citekey>
-    <bcf:citekey order="61">Geant4</bcf:citekey>
-    <bcf:citekey order="0">*</bcf:citekey>
+    <bcf:citekey order="48">star</bcf:citekey>
+    <bcf:citekey order="49">OPA847</bcf:citekey>
+    <bcf:citekey order="50">R6095</bcf:citekey>
+    <bcf:citekey order="51">C9028</bcf:citekey>
+    <bcf:citekey order="52">STEJSKAL2019thesis</bcf:citekey>
+    <bcf:citekey order="53">datS14605</bcf:citekey>
+    <bcf:citekey order="54">STEJSKAL2019thesis</bcf:citekey>
+    <bcf:citekey order="55">Geant4</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
-  <bcf:sortingtemplate name="ynt">
+  <bcf:sortingtemplate name="none">
     <bcf:sort order="1">
-      <bcf:sortitem order="1">presort</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="2" final="1">
-      <bcf:sortitem order="1">sortkey</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="3">
-      <bcf:sortitem order="1">sortyear</bcf:sortitem>
-      <bcf:sortitem order="2">year</bcf:sortitem>
-      <bcf:sortitem order="3">9999</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="4">
-      <bcf:sortitem order="1">sortname</bcf:sortitem>
-      <bcf:sortitem order="2">author</bcf:sortitem>
-      <bcf:sortitem order="3">editor</bcf:sortitem>
-      <bcf:sortitem order="4">translator</bcf:sortitem>
-      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="6">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="5">
-      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="2">title</bcf:sortitem>
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
   <bcf:datalist section="0"
-                name="ynt/global//global/global"
+                name="none/global//global/global"
                 type="entry"
-                sortingtemplatename="ynt"
+                sortingtemplatename="none"
                 sortingnamekeytemplatename="global"
                 labelprefix=""
                 uniquenametemplatename="global"

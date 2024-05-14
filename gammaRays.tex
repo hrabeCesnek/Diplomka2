@@ -11,7 +11,7 @@
 \section{Gamma radiation emission}
 
 
-Gamma rays are photons, but the main difference from X-ray photons is that they originate only from the atomic nucleus when it is de-excited from a higher energy level to a lower one. The energy levels of the nucleus are similar to the levels in the electron shell - discrete, characteristic of each isotope and can be described by quantum numbers. Alpha and beta decay produce a new nucleus in an excited state, and thus they are followed by gamma emission.
+Gamma rays are photons, but the main difference from X-ray photons is that they originate only from the atomic nucleus when it is de-excited from a higher energy level to a lower one. The energy levels of the nucleus are similar to the levels in the electron shell - discrete, characteristic for each isotope and can be described by quantum numbers. Alpha and beta decays produce a new nucleus in an excited state and are therefore followed by gamma emission.
 
 %Gamma rays are photons, but the mayor difference to the X-Ray photons is that they originate only from atomic nucleus upon its deexcitation from higher energy level to lower. The energy levels of nucleus are similar to the levels in electron shell - discrete, characteristic for every isotope and can be described by quantum numbers. Alpha and beta decays create a new nucleus in excited state, and thus they are followed by gamma emission.
 
@@ -35,13 +35,13 @@ where $F_{\textrm{part}}$ is the particle flux, $\Omega$ is the solid angle and 
 However, to characterise the interaction probability of a particle with condensed matter containing many interaction centres (defined by their density), other assumptions have to be made. The average number of scattered particles is given by:
 %However, to characterize the interaction probability of particle with continuous matter, which contains many interaction centres (defined by their density), other assumptions have to be made. The average number of scattered particles is given by:
  \begin{equation}
- N(\Omega) = F_{\textrm{part}}AN \delta x \frac{d\sigma}{d\Omega}
+ N_{\textrm{sc}}(\Omega) = F_{\textrm{part}}AN_{\textrm{i}} \delta x \frac{d\sigma}{d\Omega}
  \end{equation}
 and integrated over the entire solid angle:
  \begin{equation}
- N_{\textrm{tot}} = F_{\textrm{part}}AN\sigma \delta x.
+ N_{\textrm{tot}} = F_{\textrm{part}}AN_{\textrm{i}}\sigma \delta x.
  \end{equation}
-The $A$ is the total area perpendicular to the flux, $\delta x$ is the material thickness and $N$ is the density of interaction centres.
+The $A$ is the total area perpendicular to the flux, $\delta x$ is the material thickness and $N_{\textrm{i}}$ is the density of interaction centres.
 \par
 Heavy charged particles (such as alpha particles, protons, muons, pions) lose energy mainly through collisions with atomic electrons. Due to their mass, which is much higher than the mass of the electrons ($M >> m_\textrm{e}$) they collide with, the direction of their trajectory remains unchanged. The energy loss per unit distance is defined as the stopping power $\frac{dE}{dx}$. The stopping power for the heavy charged particles is given by the Bethe-Bloch formula, which relates the stopping power to the energy of the particle. However, the Bethe-Bloch formula doesn't apply at low energies (guided by Lindhard theory) and at higher energies (bremsstrahlung radiation). The change in path direction is possible, with a lower probability, by the secondary interaction - elastic scattering from nuclei.
 \par
@@ -68,13 +68,13 @@ Three main interactions of photons with matter are: photoelectric effect, Compto
 \par
 The attenuation of the photon flux has a form of exponential decay:
 \begin{equation}
-I = I_{0}exp(-\mu x),
+I_{\textrm{T}} = I_{0}exp(-\mu x),
 \end{equation}
-where $I_{0}$ is the incident radiation intensity, $I$ is the transmitted radiation intensity and the parameter $\mu$ is the total absorption coefficient, which describes the probability of interaction per unit length and is bounded with the total cross section of single atom $\sigma$ (combination of the cross sections of the three main effects) by the relation:
+where $I_{0}$ is the incident radiation intensity, $I_{\textrm{T}}$ is the transmitted radiation intensity and the parameter $\mu$ is the total absorption coefficient, which describes the probability of interaction per unit length and is bounded with the total cross section of single atom $\sigma_{\textrm{A}}$ (combination of the cross sections of the three main effects) by the relation:
 \begin{equation}
- \mu = N \sigma = \sigma(N_{a}\rho/A_{\textrm{w}})
+ \mu = N_{\textrm{d}} \sigma_{\textrm{A}} = \sigma_{\textrm{A}}(N_{a}\rho/A_{\textrm{w}})
  \end{equation}
-where $N$ is the atomic density, $N_{a}$ is the Avogadro number, $\rho$ is the material density and $A_{\textrm{w}}$ is the molecular weight. The total cross section of the combined three main interactions as a function of photon energy for lead is shown in the figure \ref{cross}.
+where $N_{\textrm{d}}$ is the atomic density, $N_{\textrm{a}}$ is the Avogadro number, $\rho$ is the material density and $A_{\textrm{w}}$ is the molecular weight. The total cross section of the combined three main interactions as a function of photon energy for lead is shown in the figure \ref{cross}.
 %where $N$ is the density of atoms, $N_{a}$ is the Avogadro number, $\rho$ is the material density and $A_{\textrm{w}}$ is the molecular weight. The total cross section of combined three main interactions in dependence on the photon energy for lead is shown in the Fig. \ref{cross}.
 \begin{figure}[H]
  \centering
@@ -113,7 +113,7 @@ where $E_{\textrm{e}}$ is the energy transferred to an electron, $E_1$ is the in
 
 
 \subsubsection{Pair production}
-At much higher energies, the photon can be converted into an electron-positron pair. This effect occurs near the nucleus, which absorbs a part of the original photon momentum \cite{Leo1987-wy}.
+At much higher energies, the photon can be converted into an electron-positron pair. This effect occurs near the nucleus, which absorbs a part of the original photon momentum \cite{Leo1987-wy}. Minimum required energy is 1.022 MeV, which corresponds to 2$\times$ electron rest energy.
 %At much higher energies, the photon can be converted into electron-positron pair. This effect happens near the nucleus, which absorbs a part of the original photon momentum \cite{Leo1987-wy}.
 \par
 The pair production and the electron bremsstrahlung are key effects in the development of electron-photon showers. If the electron/positron produced has sufficient energy, it emits bremsstrahlung photons. These bremsstrahlung photons can interact again via pair production, creating new electrons. This process of shower evolution continues until the energy of the electron/positron pairs falls below the energy required to produce bremsstrahlung radiation. At lower energies, the electrons lose more of their energy through atomic collisions than through bremsstrahlung.

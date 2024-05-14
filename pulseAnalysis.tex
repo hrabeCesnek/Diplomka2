@@ -65,7 +65,7 @@ To reduce thermal noise and achieve better SNR, it is necessary to cool the dete
 
 \section{Spectrometric chain components}
 \subsection{Pre-amplification}
-The signal coming from the PIN detector is a charge (current pulse), so it is necessary to convert it into a voltage pulse. To perform the charge-voltage conversion, there is a circuit called a charge amplifier (also called a preamplifier). The main functional scheme is described by an opamp with a capacitor in feedback (see figure \ref{trans}). The functionality is similar to an $I/U$ transimpedance amplifier, but the charge amplifier works mainly as an integrator. In the ideal case (opamp gain $A >> 0$) the measured voltage per unit charge is approximately equal to:
+The signal coming from the PIN detector is a charge (current pulse), so it is necessary to convert it into a voltage pulse. To perform the charge-voltage conversion, there is a circuit called a charge amplifier (also called a preamplifier). The main functional scheme is described by an opamp with a capacitor in feedback (see figure \ref{trans}). The functionality is similar to an $I/U$ transimpedance amplifier, but the charge amplifier works mainly as an integrator. In the ideal case (opamp gain $G >> 0$) the measured voltage per unit charge is approximately equal to:
 %The signal coming out of the PIN detector is a charge (current pulse), so it is necessary to convert it into voltage pulse. For performing the charge-voltage conversion, there is circuit called charge amplifier (also referred as a preamplifier). The principal functional scheme is described by one opamp with a capacitor in feedback (see figure \ref{trans}). The functionality is similar to $I/U$ transimpedance amplifier, but the charge amplifier works mainly as an integrator. In ideal case (opamp amplification $A >> 0$), the measured voltage per unit charge is approximately equal to:
 
 \begin{equation}
@@ -105,7 +105,7 @@ in = \sqrt{2e(I_{\textrm{G}} + I_{\textrm{D}})},
 where $e$ is the elementary charge, $I_{\textrm{G}}$ is the gate leakage current of the first stage FET and $I_{\textrm{D}}$ is the dark current of the detector.
 \item Thermal noise caused by feedback resistance: 
 \begin{equation}
-en_2 = \sqrt{4KTR_{\textrm{f}}},
+en_2 = \sqrt{4kTR_{\textrm{f}}},
 \end{equation}
 where $R_{\textrm{f}}$ is the feedback resistance.
 \end{itemize}
@@ -121,7 +121,7 @@ where $C_{\textrm{f}}$ is the feedback capacitance, $C_{\textrm{in}}$ is the res
 The first term in the equation \ref{finalNoise} depends on the ratio between the input capacitance $C_{\textrm{in}}$ and the feedback capacitance $C_{\textrm{f}}$, so the feedback capacitance of the preamplifier must be optimised to reduce the electronic noise.
 \par
 For the PCB design we used a CR-110-R2 charge amplifier from Cremat Inc. This preamplifier also contains the second stage - the common voltage amplifier.
-CR-110-R2 offers the conversion gain $G = 1.4$ V/pC, decay constant $\tau = 140$ $\mu$s CR-110-R2) and noise (FWHM) in silicon equal to 1.7 keV \cite{cr110}. It can be easily calculated that for a 14.4 keV photon, the output pulse has an amplitude equal to $U_{A} = 0.8928$ mV. Note that the noise introduced by the preamplifier is much larger than the intrinsic Fano noise (FWHM = 185.4 eV).  Its internal scheme can be seen in the figure \ref{internal}.   
+CR-110-R2 offers the conversion gain $G = 1.4$ V/pC, decay constant $\tau = 140$ $\mu$s CR-110-R2) and noise (FWHM) in silicon equal to 1.7 keV \cite{cr110}. It can be easily calculated that for a 14.4 keV photon, the output pulse has an amplitude equal to $U_{A} = 0.8928$ mV. Note that the noise introduced by the preamplifier is much larger than the intrinsic Fano noise (FWHM$_{\textrm{Fano}}$ = 185.4 eV).  Its internal scheme can be seen in the figure \ref{internal}.   
 %\par
 %The first term in equation \ref{finalNoise} depends on the ration between the input capacitance $C_{\textrm{in}}$ and the feedback capacitance $C_{\textrm{f}}$ and thus the preamplifier's feedback capacitance has to be optimized in order to reduce the electronic noise.
 %\par
